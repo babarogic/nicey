@@ -50,16 +50,17 @@
 @mixin transition{-webkit-transition: all .25s ease-in-out;-moz-transition: all .25s ease-in-out; -ms-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out;}
 
 
-$color-dark: #161E30;
+$color-dark: rgb(29, 29, 29);
 $color-blue: #2749D8;
 $color-green: #4bcc8c;
 $color-purple: #7E0CE2;
 $color-red: #F36B7F;
+$color-orange: #e85d3d;
 $color-white: #faf8f5;
 $color-about-dark: #070b0d;
 
 .green {
-	color: $color-green;
+	color: $color-green !important;
 }
 
 
@@ -98,6 +99,8 @@ button[type="submit"]{ height: 58px; display: -ms-flexbox; display: flex; -ms-fl
 
 /* CUSTOM ELEMENTS */
 .color-white { background-color: $color-white;}
+.color-green { background-color: $color-green;}
+.color-orange { background-color: $color-orange;}
 .color-about-dark { background-color: $color-about-dark; }
 .color-red { background-color: $color-red; }
 .color-purple { background-color: $color-purple;
@@ -200,8 +203,8 @@ button[type="submit"]{ height: 58px; display: -ms-flexbox; display: flex; -ms-fl
 /* BURGER */
 .burger { margin-top: 1px; z-index: 3; display: inline-block; width: 50px; height: 50px; padding: 0; border: none; outline: none; cursor: pointer;}
 .isNavOpen { overflow: hidden;}
-.burger-svg__base{fill: #fff;}
-.burger-svg__bars{fill: $color-dark;}
+.burger-svg__base{fill: transparent;}
+.burger-svg__bars{fill: $color-white;}
 
 
 
@@ -262,10 +265,20 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 &:hover i{ opacity: 0;}}
 
 
-/* CUSTOM BUTTON */
+/* CUSTOM BUTTON #1 */
 .custom-btn{ display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-align: center; align-items: center; -ms-flex-pack: justify; justify-content: space-between; text-align: center;
 	*{@include transition;}
 	a{display: flex; flex-wrap: wrap; justify-content: center; height: 58px; border: 1px solid $color-dark; font-size: 13px; font-weight: 600; text-transform: uppercase; padding: 0 30px; padding-top: 18px; background: $color-blue; color: #fff;
+		&:hover{text-decoration: none;}}
+		span{width: 20px; height: 1px; background: #fff; display: inline-block; margin-left: 20px; margin-top: 8px; }
+		i{width: 0; height: 0; display: inline-block; margin-left: 0; margin-right: auto; border-style: solid; border-width: 4px 0 4px 4px; border-color: transparent transparent transparent #fff; opacity: 1; margin-top: 5px;}
+	&:hover span{width:50px; margin-left: 20px;}
+&:hover i{ opacity: 0;}}
+
+/* CUSTOM BUTTON #2 */
+.custom-outline-btn{ display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-align: center; align-items: center; -ms-flex-pack: justify; justify-content: space-between; text-align: center;
+	*{@include transition;}
+	a{display: flex; flex-wrap: wrap; justify-content: center; height: 58px; border: 1px solid $color-dark; font-size: 13px; font-weight: 600; text-transform: uppercase; padding: 0 30px; padding-top: 18px; background: transparent; border: 1px solid $color-green; color: #fff; margin-top: 1rem;
 		&:hover{text-decoration: none;}}
 		span{width: 20px; height: 1px; background: #fff; display: inline-block; margin-left: 20px; margin-top: 8px; }
 		i{width: 0; height: 0; display: inline-block; margin-left: 0; margin-right: auto; border-style: solid; border-width: 4px 0 4px 4px; border-color: transparent transparent transparent #fff; opacity: 1; margin-top: 5px;}
@@ -282,7 +295,9 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 	.headlines{ width: 100%; margin-bottom: 100px; margin-top: 50px; height: 76vh;
 		@media only screen and (max-width: 767px) { height: 20vh;}
 		h1{font-size: 52px; font-weight: 700; line-height: 1.1; margin: 0; padding-bottom:5px; color: $color-white;
-			@media only screen and (max-width: 767px) { font-size: 3.125em; }}}}
+			@media only screen and (max-width: 767px) { font-size: 3.125em; }}
+		h4{color: rgba(255, 255, 255, 0.75); line-height: 1.5;}
+		}}
 
 .plant { background: url(../images/bg/plant-01.png); background-repeat: no-repeat; background-position: 100% 36%;
 	z-index: -1; width: 100%; height: 100%; position: absolute; left: 0; top: 0; box-sizing: border-box; background-size: 620px auto;
@@ -300,7 +315,7 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 			&:hover:before{background: #fff;}}}
 	.logo{margin-left: 0;
 		a{ margin: 0;
-			img{height: 42px;}}}
+			img{height: 56px;}}}
 	.phone{margin-left: 50px;}
 	.main-menu{margin-left: auto;
 		ul{ margin: 0; padding: 0;
@@ -483,7 +498,7 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 
 
 /* SHOWREEL */
-.showreel{width: 100%; display: flex; flex-wrap: wrap; padding: 150px 0;
+.showreel{width: 100%; display: flex; flex-wrap: wrap; height: 100vh; align-items: center;
 	.video{width: 100%; float: left; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center;position: relative; box-shadow: 0px 32px 64px -6px rgba(0,0,0,0.2);
 		h2{ width: 100%; height: 200px; line-height: 200px; position: absolute; left: 0; top: 50%; margin-top: -100px; text-align: center; color: #fff; font-size: 4vw; font-weight: 800;}
 		video{width: 100%; min-width: 100%; min-height: 100%; float: left}}}
@@ -640,7 +655,7 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 	h6{ font-size: 17px; font-weight: 600; margin-bottom: 20px;}
 	h2{font-size: 3vw; font-weight: 800; margin-bottom: 50px; }}
 	.logo{display: block; margin: 0;
-		img{height: 42px;}}
+		img{height: auto;}}
 	h5{font-size: 15px; font-weight: 600; margin-bottom: 20px;}
 	.sub-footer{ width: 100%; display: flex; flex-wrap: wrap; margin-top: 100px; font-size: 13px;
 		ul{display: inline-block;  margin-left: 0; margin-right: auto; margin-bottom: 0; padding: 0;

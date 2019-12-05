@@ -8,7 +8,8 @@
   <meta name="theme-color" content="#434CCC" />
   <title>Nicey | Digital Product Design Agency</title>
   <meta name="author" content="Nicey">
-  <meta name="description" content="We’re Nicey a playful creative studio nestled in the heart of Novi Sad. We’re a team of strategists, designers, developers and technologists with a passion to create standout digital experiences for consumers, brands and organisations around the world.">
+  <meta name="description"
+    content="We’re Nicey a playful creative studio nestled in the heart of Novi Sad. We’re a team of strategists, designers, developers and technologists with a passion to create standout digital experiences for consumers, brands and organisations around the world.">
   <meta name="keywords"
     content="creative, works, showcase, portfolio, projects, modern, agency, digital, studio, css, animation, transition, landing page, dashboard, saas, freelancer, product, marketing">
 
@@ -42,12 +43,12 @@
 </head>
 
 <body>
-  <!-- <div class="preloader">
+  <div class="preloader">
     <div class="inner">
       <h3 class="text-white">Welcome</h3>
       <span class="percentage"></span>
     </div>
-  </div> -->
+  </div>
   <!-- end preloader -->
   <div class="transition-overlay"></div>
   <!-- end transition-overlay -->
@@ -103,12 +104,48 @@
     <a href="#top" class="gotop"><img src="images/icon-gotop.svg" alt="Image"></a>
   </aside> -->
   <!-- end left-side -->
-  <header class="header" id="dots">
-    <nav class="navbar">
+
+  <section class="showreel" data-color="purple">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="Image"></a> </div>
+        <div class="phone"></div>
+        <div class="main-menu">
+          <ul>
+            <li><a href="cases.html">Case Studies</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="hamburger-menu" id="hamburger-menu">
+          <div class="burger">
+            <svg id="burger-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+              <title>Show / Hide Navigation</title>
+              <rect class="burger-svg__base" width="50" height="50" />
+              <g class="burger-svg__bars">
+                <rect class="burger-svg__bar burger-svg__bar-1" x="14" y="18" width="22" height="2" />
+                <rect class="burger-svg__bar burger-svg__bar-2" x="14" y="24" width="22" height="2" />
+                <rect class="burger-svg__bar burger-svg__bar-3" x="14" y="30" width="22" height="2" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </nav>
+      <div class="video reveal-effect masker wow">
+        <video src="videos/video42.mp4" autoplay loop muted></video>
+        <h2>WE ARE NICEY</h2>
+        <!-- end content -->
+      </div>
+      <!-- end video -->
+    </div>
+    <!-- end container -->
+  </section>
+  <!-- end showreel -->
+  <section class="header" id="dots" data-color="green">
+    <!-- <nav class="navbar">
       <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="Image"></a> </div>
-      <!-- end logo -->
       <div class="phone"></div>
-      <!-- end phone -->
       <div class="main-menu">
         <ul>
           <li><a href="cases.html">Case Studies</a></li>
@@ -117,7 +154,6 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-      <!-- end main-menu -->
       <div class="hamburger-menu" id="hamburger-menu">
         <div class="burger">
           <svg id="burger-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
@@ -130,98 +166,28 @@
             </g>
           </svg>
         </div>
-        <!-- end burger -->
+
       </div>
-      <!-- end hamburger-menu -->
-    </nav>
+    </nav> -->
     <!-- end navbar -->
     <div class="headlines" data-color="white">
       <div class="container">
         <div class="row align-content-center" style="height: 70vh;">
-        <div class="col-md-8">
-          <h1 class="element">We are <span class="green">nicey</span> a digital product design agency</h1>
-          <h4 class="text-white-50 mt-4">Team of strategists,
-              designers, developers and technologists with a passion to create standout digital experiences for consumers,
-              brands and organisations around the world.</h4>
-        </div>
+          <div class="col-md-8">
+            <h1 class="element">Let’s <span class="green">design</span> digital<br>products that people will love!</h1>
+            <h4 class="mt-3">We are passionate to create standout digital experiences for
+              consumers, brands and organisations around the world.</h4>
+              <div class="custom-outline-btn mt-5"><a class="green" href="cases.html">Check our services<span></span> <i></i></a></div>
+
+          </div>
         </div>
         <!-- <div class="plant"></div> -->
       </div>
       <!-- end container -->
     </div>
     <!-- end headlines -->
-  </header>
-  <!-- end header -->
-
-
-  <section class="works" data-color="dark">
-    <div class="container">
-      <ul>
-        <li>
-          <div class="titles">
-            <h2>Explore recent works</h2>
-            <p>We’re constantly refining our design process, adding new features and working to help your section business grow.
-            </p>
-            <div class="custom-btn"><a href="cases.html">See all cases<span></span> <i></i></a></div>
-            <!-- end custom-btn -->
-          </div>
-          <!-- end titles -->
-        </li>
-        <li>
-          <div class="project-box">
-            <figure class="project-image reveal-effect masker wow"> <a href="images/digital-signage.jpg"
-                data-fancybox><img src="images/digital-signage.jpg" alt="Image"></a> </figure>
-            <div class="project-content">
-              <h3><a href="images/digital-signage.jpg" data-fancybox>Digital Signage</a></h3>
-              <small>Web Design / Landing Page</small>
-            </div>
-            <!-- end project-content -->
-          </div>
-          <!-- end project-box -->
-        </li>
-        <li>
-          <div class="project-box">
-            <figure class="project-image reveal-effect masker wow"> <a href="rakuten.html"><img
-                  src="images/RakutenSL.jpg" alt="Image"></a> </figure>
-            <div class="project-content">
-              <h3><a href="rakuten.html">Rakuten Super Logistics</a></h3>
-              <small>Graphic Design - Marketing</small>
-            </div>
-            <!-- end project-content -->
-          </div>
-          <!-- end project-box -->
-        </li>
-        <li>
-          <div class="project-box">
-            <figure class="project-image reveal-effect masker wow"> <a href="images/dashboard-full.jpg"
-                data-fancybox><img src="images/dashboard.jpg" alt="Image"></a> </figure>
-            <div class="project-content">
-              <h3><a href="images/dashboard-full.jpg" data-fancybox>SaaS Dashboard</a></h3>
-              <small>UX UI</small>
-            </div>
-            <!-- end project-content -->
-          </div>
-          <!-- end project-box -->
-        </li>
-        <li>
-          <div class="project-box">
-            <figure class="project-image reveal-effect masker wow"> <a href="images/magiq-full.jpg" data-fancybox><img
-                  src="images/mafiq.jpg" alt="Image"> </a></figure>
-            <div class="project-content">
-              <h3><a href="images/magiq-full.jpg" data-fancybox>Magiq Software</a></h3>
-              <small>Web Design</small>
-            </div>
-            <!-- end project-content -->
-          </div>
-          <!-- end project-box -->
-        </li>
-      </ul>
-    </div>
-    <!-- end container -->
   </section>
-  <!-- end works -->
-
-
+  <!-- end header -->
 
   <section class="featured-services" data-color="blue">
     <div class="container">
@@ -237,7 +203,7 @@
         <!-- end col-12 -->
 
         <!-- end col-3 -->
-        <div class="col-lg-5 col-md-6">
+        <div class="col-lg-6 col-md-6">
           <figure class="reveal-effect masker wow"> <img src="images/services/service-1.gif" alt="Image">
             <figcaption>
               <span>02</span>
@@ -249,7 +215,7 @@
           </figure>
         </div>
         <!-- end col-3 -->
-        <div class="col-lg-5 col-md-6">
+        <div class="col-lg-6 col-md-6">
           <figure class="reveal-effect masker wow"> <img src="images/services/service-3.gif" alt="Image">
             <figcaption>
               <span>03</span>
@@ -262,7 +228,7 @@
           </figure>
         </div>
         <!-- end col-3 -->
-        <div class="col-lg-5 col-md-6">
+        <div class="col-lg-6 col-md-6">
           <figure class="reveal-effect masker wow"> <img src="images/services/service-4.gif" alt="Image">
             <figcaption>
               <span>04</span>
@@ -274,7 +240,7 @@
           </figure>
         </div>
         <!-- end col-3 -->
-        <div class="col-lg-5 col-md-6">
+        <div class="col-lg-6 col-md-6">
           <figure class="reveal-effect masker wow"> <img src="images/services/service-7.gif" alt="Image">
             <figcaption>
               <span>05</span>
@@ -295,18 +261,80 @@
   </section>
   <!-- end featured-services -->
 
-  <section class="showreel" data-color="purple">
+
+  <section class="works" data-color="dark">
     <div class="container">
-      <div class="video reveal-effect masker wow">
-        <video src="videos/video32.mp4" autoplay loop muted></video>
-        <h2>WE LOVE ALL THE COLORS</h2>
-        <!-- end content -->
-      </div>
-      <!-- end video -->
+      <ul>
+        <li>
+          <div class="titles">
+            <h2>Explore recent works</h2>
+            <p>We’re constantly refining our design process, adding new features and working to help your section
+              business grow.
+            </p>
+            <div class="custom-btn"><a href="cases.html">See all cases<span></span> <i></i></a></div>
+            <!-- end custom-btn -->
+          </div>
+          <!-- end titles -->
+        </li>
+        <li>
+          <div class="project-box">
+            <figure class="project-image reveal-effect masker wow"> <a href="images/digital-signage.jpg"
+                data-fancybox><img src="images/digital-signage.jpg" alt="Image"></a> </figure>
+            <div class="project-content">
+              <h3><a href="images/digital-signage.jpg" data-fancybox>Digital Signage</a></h3>
+              <small>Web Design / Landing Page</small>
+            </div>
+            <!-- end project-content -->
+          </div>
+          <!-- end project-box -->
+        </li>
+
+        <li>
+          <div class="project-box">
+            <figure class="project-image reveal-effect masker wow"> <a href="rakuten.html"><img
+                  src="images/RakutenSL.jpg" alt="Image"></a> </figure>
+            <div class="project-content">
+              <h3><a href="rakuten.html">Rakuten Super Logistics</a></h3>
+              <small>Graphic Design - Marketing</small>
+            </div>
+            <!-- end project-content -->
+          </div>
+          <!-- end project-box -->
+        </li>
+
+        <li>
+          <div class="project-box">
+            <figure class="project-image reveal-effect masker wow"> <a href="images/dashboard-full.jpg"
+                data-fancybox><img src="images/dashboard.jpg" alt="Image"></a> </figure>
+            <div class="project-content">
+              <h3><a href="images/dashboard-full.jpg" data-fancybox>SaaS Dashboard</a></h3>
+              <small>UX UI</small>
+            </div>
+            <!-- end project-content -->
+          </div>
+          <!-- end project-box -->
+        </li>
+
+        <li>
+          <div class="project-box">
+            <figure class="project-image reveal-effect masker wow"> <a href="images/magiq-full.jpg" data-fancybox><img
+                  src="images/mafiq.jpg" alt="Image"> </a></figure>
+            <div class="project-content">
+              <h3><a href="images/magiq-full.jpg" data-fancybox>Magiq Software</a></h3>
+              <small>Web Design</small>
+            </div>
+            <!-- end project-content -->
+          </div>
+          <!-- end project-box -->
+        </li>
+      </ul>
     </div>
     <!-- end container -->
   </section>
-  <!-- end showreel -->
+  <!-- end works -->
+
+
+
   <section class="work-with-us" data-color="red">
     <div class="container wow fadeInUp">
       <h6>WORK WITH PRO TEAM</h6>
@@ -349,16 +377,16 @@
         <div class="col-lg-3 col-md-6 wow fadeInUp">
           <h5>Say Hello</h5>
           <address>
-            office@wearenicey.com <br>
-            +381 63 758 2723
+            <a href="mailto:office@wearenicey.com">office@wearenicey.com</a> <br>
+            <a href="mailto:381636582723">+381 63 758 2723</a>
           </address>
         </div>
         <!-- end col-3 -->
         <div class="col-12 wow fadeInUp">
           <div class="sub-footer">
             <ul>
-              <li><a href="#">Career</a></li>
-              <li><a href="#">Term & Condutions</a></li>
+              <li><a class="disabled" href="#">Career</a></li>
+              <li><a class="disabled" href="#">Term & Condutions</a></li>
             </ul>
             <span>© 2019 Nicey - All rights Reserved</span>
           </div>
