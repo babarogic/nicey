@@ -2479,6 +2479,7 @@ img {
 
 .showreel .video {
   width: 100%;
+  margin-bottom: 6vh;
   float: left;
   display: -webkit-box;
   display: -ms-flexbox;
