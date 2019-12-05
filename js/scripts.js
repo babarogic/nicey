@@ -437,25 +437,25 @@
 
 
 
-// TYPED JS Heading
-var typed = new Typed('.element', {
-  // Waits 1000ms after typing "First"
-	strings: ['We are nicey, ^1000 <br>a digital product<br>design agency'],
-	stringsElement: null,
-		// typing speed
-		typeSpeed: 42,
-		// time before typing starts
-		startDelay: 3400,
-		// backspacing speed
-		backSpeed: 20,
-		// time before backspacing
-		backDelay: 500,
-		// show cursor
-		showCursor: false,
-		// character for cursor
-		cursorChar: "|",
-		// attribute to type (null == text)
-		attr: null,
-		// either html or text
-		contentType: 'html',
-});
+// // TYPED JS Heading
+// var typed = new Typed('.element', {
+//   // Waits 1000ms after typing "First"
+// 	strings: ['We are nicey, ^1000 <br>a digital product<br>design agency'],
+// 	stringsElement: null,
+// 		// typing speed
+// 		typeSpeed: 42,
+// 		// time before typing starts
+// 		startDelay: 3400,
+// 		// backspacing speed
+// 		backSpeed: 20,
+// 		// time before backspacing
+// 		backDelay: 500,
+// 		// show cursor
+// 		showCursor: false,
+// 		// character for cursor
+// 		cursorChar: "|",
+// 		// attribute to type (null == text)
+// 		attr: null,
+// 		// either html or text
+// 		contentType: 'html',
+// });

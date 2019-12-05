@@ -101,6 +101,10 @@
   font-weight: 700;
 }
 
+.green {
+  color: #4bcc8c;
+}
+
 /* BODY */
 * {
   outline: none !important;
@@ -108,8 +112,6 @@
 
 body {
   margin: 0;
-  padding-left: 50px;
-  padding-right: 50px;
   font-family: 'Lato';
   font-size: 17px;
   color: #161E30;
@@ -1259,6 +1261,12 @@ button[type="submit"]:hover i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 50px;
+  background-image: url(../images/header.jpg);
+  background-size: cover;
 }
 
 .header .navbar {
@@ -1287,7 +1295,7 @@ button[type="submit"]:hover i {
   width: 100%;
   margin-bottom: 100px;
   margin-top: 50px;
-  height: 40vh;
+  height: 76vh;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1297,12 +1305,12 @@ button[type="submit"]:hover i {
 }
 
 .header .headlines h1 {
-  font-size: 5vw;
-  font-weight: 900;
-  line-height: 1;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.1;
   margin: 0;
   padding-bottom: 5px;
-  color: #161E30;
+  color: #faf8f5;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1414,6 +1422,7 @@ button[type="submit"]:hover i {
 }
 
 .navbar .main-menu ul li a {
+  color: #eee !important;
   display: block;
   font-size: 15px;
   font-weight: 600;

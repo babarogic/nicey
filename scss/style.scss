@@ -52,16 +52,20 @@
 
 $color-dark: #161E30;
 $color-blue: #2749D8;
-$color-green: #4bcc8c;	
+$color-green: #4bcc8c;
 $color-purple: #7E0CE2;
 $color-red: #F36B7F;
 $color-white: #faf8f5;
 $color-about-dark: #070b0d;
 
+.green {
+	color: $color-green;
+}
+
 
 /* BODY */
 *{outline: none !important;}
-body{margin: 0; padding-left: 50px; padding-right: 50px; font-family: 'Lato'; font-size: 17px; color:$color-dark;  @include transition-bg; @include font-render;}
+body{margin: 0; font-family: 'Lato'; font-size: 17px; color:$color-dark;  @include transition-bg; @include font-render;}
 
 
 /* LINKS */
@@ -270,14 +274,14 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 
 
 /* HEADER */
-.header{width: 100%; display: flex; flex-wrap: wrap; flex-direction: column;
+.header{width: 100%; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center; padding: 0 50px; background-image: url(../images/header.jpg); background-size: cover;
 	.navbar{width: 100%; margin-bottom: 0;}
 	.page-title{ width: 100%; margin-bottom: 100px; margin-top: 50px;
 		h2{font-weight: 700; font-size: 6vw; margin-bottom: 20px;}
 		h4{ padding-right: 40%; line-height: 1.7;}}
-	.headlines{ width: 100%; margin-bottom: 100px; margin-top: 50px; height: 40vh;
+	.headlines{ width: 100%; margin-bottom: 100px; margin-top: 50px; height: 76vh;
 		@media only screen and (max-width: 767px) { height: 20vh;}
-		h1{font-size: 5vw; font-weight: 900; line-height: 1; margin: 0; padding-bottom:5px; color: $color-dark;
+		h1{font-size: 52px; font-weight: 700; line-height: 1.1; margin: 0; padding-bottom:5px; color: $color-white;
 			@media only screen and (max-width: 767px) { font-size: 3.125em; }}}}
 
 .plant { background: url(../images/bg/plant-01.png); background-repeat: no-repeat; background-position: 100% 36%;
@@ -301,7 +305,7 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 	.main-menu{margin-left: auto;
 		ul{ margin: 0; padding: 0;
 			li{display: inline-block; margin: 0 18px; padding: 0;
-				a{display: block; font-size: 15px; font-weight: 600; position: relative; padding: 0 2px;
+				a{color: #eee !important; display: block; font-size: 15px; font-weight: 600; position: relative; padding: 0 2px;
 				&:hover{ text-decoration: none;}
 			&:before { content: ''; display: block; position: absolute; left: 0; bottom: 9px; height: 1px; width: 0; transition: width 0s ease, background .25s ease;}
 			&:after { content: ''; display: block; position: absolute; right: 0; bottom: 9px; height: 1px; width: 0; background: $color-dark; transition: width .25s ease;}
