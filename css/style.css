@@ -90,7 +90,7 @@
 
 .green {
   background: -webkit-gradient(linear, left top, left bottom, from(#7E0CE2), color-stop(#2749D8), to(#e85d3d));
-  background: linear-gradient(#7E0CE2, #2749D8, #e85d3d);
+  background: linear-gradient(180deg, #7E0CE2, #2749D8, #e85d3d);
   background: -webkit-linear-gradient(#7E0CE2, #2749D8, #e85d3d);
   text-shadow: 12px 12px 32px #070b0d38;
   -webkit-background-clip: text;
