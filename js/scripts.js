@@ -440,10 +440,10 @@
 // TYPED JS Heading
 var typed = new Typed('.element', {
   // Waits 1000ms after typing "First"
-	strings: ["WE ARE NICEY. ^1000", "WE LOVE ALL COLORS. ^1000"],
+	strings: ["WE ARE NICEY. ^1000", "WE LOVE ALL COLORS. ^1000", "LET'S BUILD TOGETHER ^1000"],
 	stringsElement: null,
 		// typing speed
-		typeSpeed: 52,
+		typeSpeed: 32,
 		// time before typing starts
 		startDelay: 3400,
 		// backspacing speed
