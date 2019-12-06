@@ -1,27 +1,65 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Catamaran:400,700,900&display=swap");
 @font-face {
-  font-family: 'Mont';
-  src: url("../fonts/Mont-Regular.eot");
-  src: local("☺"), url("../fonts/Mont-Regular.woff") format("woff"), url("../fonts/Mont-Regular.ttf") format("truetype"), url("../fonts/Mont-Regular.svg") format("svg");
-  font-weight: 400;
+  font-family: "Gilroy-Black";
+  src: url("Radomir Tinkov - Gilroy-Black.eot");
+  src: url("Radomir Tinkov - Gilroy-Black.eot?#iefix") format("embedded-opentype"), url("Radomir Tinkov - Gilroy-Black.woff2") format("woff2"), url("Radomir Tinkov - Gilroy-Black.woff") format("woff"), url("Radomir Tinkov - Gilroy-Black.ttf") format("ttf"), url("Radomir Tinkov - Gilroy-Black.svg#Gilroy-Black") format("svg");
   font-style: normal;
+  font-weight: 900;
 }
 
 @font-face {
-  font-family: 'Mont';
-  src: url("../fonts/Mont-Bold.eot");
-  src: local("☺"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("truetype"), url("../fonts/Mont-Bold.svg") format("svg");
-  font-weight: 600;
+  font-family: "Gilroy-Bold";
+  src: url("Radomir Tinkov - Gilroy-Bold.eot");
+  src: url("Radomir Tinkov - Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("Radomir Tinkov - Gilroy-Bold.woff2") format("woff2"), url("Radomir Tinkov - Gilroy-Bold.woff") format("woff"), url("Radomir Tinkov - Gilroy-Bold.ttf") format("ttf"), url("Radomir Tinkov - Gilroy-Bold.svg#Gilroy-Bold") format("svg");
   font-style: normal;
+  font-weight: 700;
 }
 
 @font-face {
-  font-family: 'Mont';
-  src: url("../fonts/Mont-Heavy.eot");
-  src: local("☺"), url("../fonts/Mont-Heavy.woff") format("woff"), url("../fonts/Mont-Heavy.ttf") format("truetype"), url("../fonts/Mont-Heavy.svg") format("svg");
+  font-family: "Gilroy-ExtraBold";
+  src: url("Radomir Tinkov - Gilroy-ExtraBold.eot");
+  src: url("Radomir Tinkov - Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"), url("Radomir Tinkov - Gilroy-ExtraBold.woff2") format("woff2"), url("Radomir Tinkov - Gilroy-ExtraBold.woff") format("woff"), url("Radomir Tinkov - Gilroy-ExtraBold.ttf") format("ttf"), url("Radomir Tinkov - Gilroy-ExtraBold.svg#Gilroy-ExtraBold") format("svg");
+  font-style: normal;
   font-weight: 800;
+}
+
+@font-face {
+  font-family: "Gilroy-Heavy";
+  src: url("Radomir Tinkov - Gilroy-Heavy.eot");
+  src: url("Radomir Tinkov - Gilroy-Heavy.eot?#iefix") format("embedded-opentype"), url("Radomir Tinkov - Gilroy-Heavy.woff2") format("woff2"), url("Radomir Tinkov - Gilroy-Heavy.woff") format("woff"), url("Radomir Tinkov - Gilroy-Heavy.ttf") format("ttf"), url("Radomir Tinkov - Gilroy-Heavy.svg#Gilroy-Heavy") format("svg");
   font-style: normal;
+  font-weight: heavy;
+}
+
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("Radomir Tinkov - Gilroy-Light.eot");
+  src: url("Radomir Tinkov - Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("Radomir Tinkov - Gilroy-Light.woff2") format("woff2"), url("Radomir Tinkov - Gilroy-Light.woff") format("woff"), url("Radomir Tinkov - Gilroy-Light.ttf") format("ttf"), url("Radomir Tinkov - Gilroy-Light.svg#Gilroy-Light") format("svg");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("Radomir Tinkov - Gilroy-Medium.eot");
+  src: url("Radomir Tinkov - Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("Radomir Tinkov - Gilroy-Medium.woff2") format("woff2"), url("Radomir Tinkov - Gilroy-Medium.woff") format("woff"), url("Radomir Tinkov - Gilroy-Medium.ttf") format("ttf"), url("Radomir Tinkov - Gilroy-Medium.svg#Gilroy-Medium") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("Radomir Tinkov - Gilroy-Regular.eot");
+  src: url("Radomir Tinkov - Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("Radomir Tinkov - Gilroy-Regular.woff2") format("woff2"), url("Radomir Tinkov - Gilroy-Regular.woff") format("woff"), url("Radomir Tinkov - Gilroy-Regular.ttf") format("ttf"), url("Radomir Tinkov - Gilroy-Regular.svg#Gilroy-Regular") format("svg");
+  font-style: normal;
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url("Radomir Tinkov - Gilroy-SemiBold.eot");
+  src: url("Radomir Tinkov - Gilroy-SemiBold.eot?#iefix") format("embedded-opentype"), url("Radomir Tinkov - Gilroy-SemiBold.woff2") format("woff2"), url("Radomir Tinkov - Gilroy-SemiBold.woff") format("woff"), url("Radomir Tinkov - Gilroy-SemiBold.ttf") format("ttf"), url("Radomir Tinkov - Gilroy-SemiBold.svg#Gilroy-SemiBold") format("svg");
+  font-style: normal;
+  font-weight: 700;
 }
 
 @font-face {
@@ -118,6 +156,8 @@ html {
 body {
   margin: 0;
   font-family: 'Gilroy';
+  font-weight: normal;
+  font-style: normal;
   font-size: 17px;
   color: #1d1d1d;
   -webkit-transition: all .4s ease-in-out;
@@ -258,7 +298,7 @@ button[type="submit"]:hover i {
 }
 
 .color-green {
-  background-color: #6dcc9d;
+  background-color: #61c291;
 }
 
 .color-orange {
@@ -1348,10 +1388,10 @@ button[type="submit"]:hover i {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2207,18 +2247,20 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #3952b8;
   position: relative;
   margin: 15px 0;
   -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
           box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-  -webkit-transition: .5s all;
-  transition: .5s all;
+  -webkit-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
 }
 
 .featured-services figure:hover {
-  background: #fff;
-  -webkit-box-shadow: 0px 56px 52px -6px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 56px 52px -6px rgba(0, 0, 0, 0.2);
+  background-color: #3952b8;
+  -webkit-box-shadow: 0 3.4px 3.2px -36px rgba(0, 0, 0, 0.077), 0 8.1px 7.8px -36px rgba(0, 0, 0, 0.109), 0 15.3px 14.7px -36px rgba(0, 0, 0, 0.131), 0 27.3px 26.1px -36px rgba(0, 0, 0, 0.151), 0 51px 48.9px -36px rgba(0, 0, 0, 0.176), 0 122px 117px -36px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 3.4px 3.2px -36px rgba(0, 0, 0, 0.077), 0 8.1px 7.8px -36px rgba(0, 0, 0, 0.109), 0 15.3px 14.7px -36px rgba(0, 0, 0, 0.131), 0 27.3px 26.1px -36px rgba(0, 0, 0, 0.151), 0 51px 48.9px -36px rgba(0, 0, 0, 0.176), 0 122px 117px -36px rgba(0, 0, 0, 0.24);
+  z-index: 1040;
   -webkit-transition: .5s all;
   transition: .5s all;
 }
@@ -2478,7 +2520,7 @@ img {
 }
 
 .showreel .video {
-  width: 100%;
+  width: 80%;
   margin-bottom: 6vh;
   float: left;
   display: -webkit-box;
@@ -3153,7 +3195,7 @@ img {
 }
 
 .work-with-us h2 {
-  font-size: 6vw;
+  font-size: 5vw;
   font-weight: 800;
   margin-bottom: 50px;
 }
