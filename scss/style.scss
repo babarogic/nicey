@@ -50,17 +50,17 @@
 
 
 $color-dark: rgb(29, 29, 29);
-$color-blue: #2749D8;
-$color-green: #4bcc8c;
-$color-purple: #7E0CE2;
-$color-red: #F36B7F;
-$color-orange: #e85d3d;
+$color-blue: rgb(77, 105, 218);
+$color-green: #6dcc9d;
+$color-purple: rgb(151, 67, 224);
+$color-red: rgb(245, 138, 154);
+$color-orange: #e9785e;
 $color-white: #faf8f5;
 $color-about-dark: #070b0d;
 
 .green {
-	background: linear-gradient(180deg,#7E0CE2, #2749D8, #e85d3d);
-	background: -webkit-linear-gradient(#7E0CE2, #2749D8, #e85d3d);
+	background: linear-gradient(right, #7931ff, #ff5833);
+	background: -webkit-linear-gradient(right, #7931ff, #ff5833);
 	text-shadow: 12px 12px 32px #070b0d38;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

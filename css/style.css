@@ -89,9 +89,9 @@
 }
 
 .green {
-  background: -webkit-gradient(linear, left top, left bottom, from(#7E0CE2), color-stop(#2749D8), to(#e85d3d));
-  background: linear-gradient(180deg, #7E0CE2, #2749D8, #e85d3d);
-  background: -webkit-linear-gradient(#7E0CE2, #2749D8, #e85d3d);
+  background: -webkit-gradient(linear, right top, left top, from(#7931ff), to(#ff5833));
+  background: linear-gradient(right, #7931ff, #ff5833);
+  background: -webkit-linear-gradient(right, #7931ff, #ff5833);
   text-shadow: 12px 12px 32px #070b0d38;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -249,11 +249,11 @@ button[type="submit"]:hover i {
 }
 
 .color-green {
-  background-color: #4bcc8c;
+  background-color: #6dcc9d;
 }
 
 .color-orange {
-  background-color: #e85d3d;
+  background-color: #e9785e;
 }
 
 .color-about-dark {
@@ -261,11 +261,11 @@ button[type="submit"]:hover i {
 }
 
 .color-red {
-  background-color: #F36B7F;
+  background-color: #f58a9a;
 }
 
 .color-purple {
-  background-color: #7E0CE2;
+  background-color: #9743e0;
 }
 
 .color-purple .left-side ul {
@@ -351,7 +351,7 @@ button[type="submit"]:hover i {
 }
 
 .color-blue {
-  background-color: #2749D8;
+  background-color: #4d69da;
 }
 
 .color-blue .left-side ul {
@@ -463,7 +463,7 @@ button[type="submit"]:hover i {
 }
 
 .color-dark a {
-  color: #2749D8;
+  color: #4d69da;
 }
 
 .color-dark small {
@@ -658,7 +658,7 @@ button[type="submit"]:hover i {
   position: fixed;
   right: calc(-100% - 200px);
   bottom: 0;
-  background: #2749D8;
+  background: #4d69da;
   z-index: 99;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -675,7 +675,7 @@ button[type="submit"]:hover i {
   height: 0;
   border-style: solid;
   border-width: 0 200px 100vh 0;
-  border-color: transparent #2749D8 transparent transparent;
+  border-color: transparent #4d69da transparent transparent;
   position: absolute;
   left: -200px;
   top: 0;
@@ -694,7 +694,7 @@ button[type="submit"]:hover i {
   margin: auto;
   width: 100vw;
   height: 100vh;
-  background: #2749D8;
+  background: #4d69da;
   opacity: 1;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -722,7 +722,7 @@ button[type="submit"]:hover i {
   height: 0;
   border-style: solid;
   border-width: 0 200px 100vh 0;
-  border-color: transparent #2749D8 transparent transparent;
+  border-color: transparent #4d69da transparent transparent;
   position: absolute;
   left: -200px;
   top: 0;
@@ -734,7 +734,7 @@ button[type="submit"]:hover i {
   height: 0;
   border-style: solid;
   border-width: 100vh 0 0 200px;
-  border-color: transparent transparent transparent #2749D8;
+  border-color: transparent transparent transparent #4d69da;
   position: absolute;
   right: -200px;
   top: 0;
@@ -845,7 +845,7 @@ button[type="submit"]:hover i {
   right: calc(-100% + -200px);
   top: 0;
   z-index: 2;
-  background: #2749D8;
+  background: #4d69da;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   transition-duration: 500ms;
@@ -861,7 +861,7 @@ button[type="submit"]:hover i {
   height: 0;
   border-style: solid;
   border-width: 0 200px 100vh 0;
-  border-color: transparent #2749D8 transparent transparent;
+  border-color: transparent #4d69da transparent transparent;
   position: absolute;
   left: -200px;
   top: 0;
@@ -1214,7 +1214,7 @@ button[type="submit"]:hover i {
   text-transform: uppercase;
   padding: 0 30px;
   padding-top: 18px;
-  background: #2749D8;
+  background: #4d69da;
   color: #fff;
 }
 
