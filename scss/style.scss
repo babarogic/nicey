@@ -1,39 +1,3 @@
-// CUSTOM FONTS
-// @font-face {
-// 	font-family: 'Mont';
-// 	src: url('../fonts/Mont-Regular.eot');
-// 	src: local('☺'),
-// 		url('../fonts/Mont-Regular.woff') format('woff'),
-// 		url('../fonts/Mont-Regular.ttf') format('truetype'),
-// 		url('../fonts/Mont-Regular.svg') format('svg');
-// 	font-weight: 400;
-// 	font-style: normal;
-// }
-
-
-// @font-face {
-// 	font-family: 'Mont';
-// 	src: url('../fonts/Mont-Bold.eot');
-// 	src: local('☺'),
-// 		url('../fonts/Mont-Bold.woff') format('woff'),
-// 		url('../fonts/Mont-Bold.ttf') format('truetype'),
-// 		url('../fonts/Mont-Bold.svg') format('svg');
-// 	font-weight: 600;
-// 	font-style: normal;
-// }
-
-
-// @font-face {
-// 	font-family: 'Mont';
-// 	src: url('../fonts/Mont-Heavy.eot');
-// 	src: local('☺'),
-// 		url('../fonts/Mont-Heavy.woff') format('woff'),
-// 		url('../fonts/Mont-Heavy.ttf') format('truetype'),
-// 		url('../fonts/Mont-Heavy.svg') format('svg');
-// 	font-weight: 800;
-// 	font-style: normal;
-// }
-
 @font-face {
   font-family: "Gilroy-Black";
   src: url("Radomir Tinkov - Gilroy-Black.eot");
@@ -116,7 +80,7 @@
 
 $color-dark: #1d1d1d;
 $color-blue: #4d69da;
-$color-green: #61c291;
+$color-green: #61c2a5;
 $color-purple: #9743e0;
 $color-red: #f58a9a;
 $color-orange: #e9785e;
@@ -124,21 +88,13 @@ $color-white: #faf8f5;
 $color-about-dark: #070b0d;
 
 span.green {
-	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7931ff), color-stop(100%, #ff5833)); background-image: -webkit-linear-gradient(right, #7931ff,#ff5833);
-  -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	color: fff;
-	position: relative;
-	&::after {
-		background: none;
-		content: attr(data-text);
-		left: 0;
-		position: absolute;
-		text-shadow: 0px 10px 5px rgba(0,0,0,0.1),
-            		 10px 15px 5px rgba(0,0,0,0.05),
-                	-10px 15px 5px rgba(0,0,0,0.05);
-		top: 0;
-		z-index: -1;
+	z-index: 1; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7931ff), color-stop(100%, #ff5833)); background-image: -webkit-linear-gradient(right, #7931ff,#ff5833);
+  	-webkit-background-clip: text; -webkit-text-fill-color: transparent; color: #fff; position: relative;
+	&::after { background: none; content: attr(data-text); left: 0; position: absolute;
+		text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+		top: 0; z-index: -1;
 	}
 }
 
@@ -187,6 +143,7 @@ button[type="submit"]{ height: 58px; display: -ms-flexbox; display: flex; -ms-fl
 .color-about-dark { background-color: $color-about-dark; }
 .color-red { background-color: $color-red; }
 .color-purple { background-color: $color-purple;
+	.header {background: none !important;}
 	.left-side ul{ width: 100vh; line-height: 1; display: block; margin: 0; margin-top:50vh; margin-left: -9px; padding: 0; transform: rotate(-90deg); transform-origin: 0 0; position: absolute; left: 50%; top: 50%; text-align: center;
 		li{display: inline-block; margin: 0 10px; padding: 0; list-style: none;
 			a{display: block; font-size: 13px; font-weight: 600; position: relative; padding: 0 2px; color: #fff;
@@ -372,7 +329,7 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 // background-image: url(../images/header.jpg); background-size: cover;
 
 /* HEADER */
-.header{width: 100%; display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center; padding: 0 50px;
+.header{width: 100%; display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center; padding: 0 50px; background: url(../images/bg/header.jpg); background-repeat: no-repeat; background-size: cover; background-position: bottom;
 	.navbar{width: 100%; margin-bottom: 0;}
 	.page-title{ width: 100%; margin-bottom: 100px; margin-top: 100px;
 		h2{font-weight: 700; font-size: 6vw; margin-bottom: 20px;}
@@ -384,7 +341,7 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 		h4{color: rgba(255, 255, 255, 0.75); line-height: 1.5;}
 		}}
 
-.plant { background: url(../images/bg/plant-01.png); background-repeat: no-repeat; background-position: 100% 15%;
+.plant { background: url(../images/bg/plant-01.png); background-repeat: no-repeat; background-position: 90% 15%;
 	z-index: -1; width: 100%; height: 100%; position: absolute; left: 0; box-sizing: border-box; background-size: 620px auto;
 	@media only screen and (max-width: 1199px) { background-position: 60vw 15vh; background-size: 50%; }
 	@media only screen and (max-width: 767px) { background: none !important; }
@@ -593,7 +550,7 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 
 /* SHOWREEL */
 .showreel{width: 100%; display: flex; flex-wrap: wrap; height: 100vh; align-items: center;
-	.video{width: 80%; margin: auto; float: left; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center;position: relative;
+	.video{width: 80%; margin-bottom: 6vh; float: left; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center;position: relative;
 		box-shadow:
   		0 3.2px 2.2px -10px rgba(0, 0, 0, 0.042),
   		0 7.8px 5.2px -10px rgba(0, 0, 0, 0.061),
