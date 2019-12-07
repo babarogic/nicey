@@ -319,7 +319,12 @@ button[type="submit"]:hover i {
 }
 
 .color-purple .header {
-  background: none !important;
+  background-image: url(../images/bg/header-purple.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  -webkit-transition: background-image .4s ease-in-out;
+  transition: background-image .4s ease-in-out;
 }
 
 .color-purple .left-side ul {
@@ -1401,10 +1406,12 @@ button[type="submit"]:hover i {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 50px;
-  background: url(../images/bg/header.jpg);
+  background-image: url(../images/bg/header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+  -webkit-transition: background-image .4s ease-in-out;
+  transition: background-image .4s ease-in-out;
 }
 
 .header .navbar {
@@ -2530,6 +2537,7 @@ img {
 
 .showreel .video {
   width: 80%;
+  border-radius: 1.5rem;
   margin-bottom: 6vh;
   float: left;
   display: -webkit-box;
