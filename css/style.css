@@ -1357,6 +1357,7 @@ button[type="submit"]:hover i {
 
 .custom-outline-btn a:hover {
   text-decoration: none;
+  border: 1px solid #faf8f5;
 }
 
 .custom-outline-btn span {

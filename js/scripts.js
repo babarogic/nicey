@@ -24,7 +24,7 @@
 							return _success();
 						}
 					}
-				}, 20);
+				}, 1);
 		}
 
 
@@ -203,6 +203,9 @@
 
 
 		// TweenMax ////////////
+
+		gsap.from("#Line_2", {duration: 1, stagger: 0.1, drawSVG: 0});
+
 		// HAMBURGER
 		$(function () {
 			var $burger = $('.burger');
@@ -443,7 +446,7 @@ var typed = new Typed('.element', {
 	strings: ["WE ARE NICEY. ^1000", "WE LOVE ALL COLORS. ^1000", "LET'S BUILD TOGETHER ^1000"],
 	stringsElement: null,
 		// typing speed
-		typeSpeed: 32,
+		typeSpeed: 20,
 		// time before typing starts
 		startDelay: 3400,
 		// backspacing speed
