@@ -330,15 +330,20 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 
 /* HEADER */
 .header{width: 100%; display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center; padding: 0 50px; background-image: url(../images/bg/header.jpg); background-repeat: no-repeat; background-size: cover; background-position: bottom;-webkit-transition: background-image .4s ease-in-out; transition: background-image .4s ease-in-out;
+	@media only screen and ( max-width: 767px) { padding: 0 15px; }
+	.container-fluid { width: 80%;
+		@media only screen and ( max-width: 767px) { width: 100%; }}
 	.navbar{width: 100%; margin-bottom: 0;}
 	.page-title{ width: 100%; margin-bottom: 100px; margin-top: 100px;
 		h2{font-weight: 700; font-size: 6vw; margin-bottom: 20px;}
 		h4{ padding-right: 40%; line-height: 1.7;}}
-	.headlines{ width: 100%; margin-bottom: 100px; margin-top: 50px; height: 50vh;
+	.headlines{ width: 100%; margin-bottom: 50px; margin-top: 100px; height: 50vh;
 		@media only screen and (max-width: 767px) { height: 20vh;}
 		h1{font-size: 52px; font-weight: 700; line-height: 1.1; margin: 0; padding-bottom:5px; color: $color-white;
-			@media only screen and (max-width: 767px) { font-size: 3.125em; }}
+			@media only screen and (max-width: 767px) { font-size: 2.5em; }}
 		h4{color: rgba(255, 255, 255, 0.75); line-height: 1.5;}
+		.container-fluid { width: 80%;
+			@media only screen and ( max-width: 767px) { width: 100%; }}
 		}}
 
 .plant { background: url(../images/bg/plant-01.png); background-repeat: no-repeat; background-position: 90% 15%;
@@ -549,8 +554,9 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 
 
 /* SHOWREEL */
-.showreel{width: 100%; display: flex; flex-wrap: wrap; height: 100vh; align-items: center;
-	.video{width: 80%; border-radius: 1.5rem; margin-bottom: 6vh; float: left; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center;position: relative;
+.showreel{width: 100%; display: flex; flex-wrap: wrap; height: 100vh; align-items: center; margin-top: -5rem;
+	@media only screen and ( max-width: 767px) { margin-top: 0; }
+	.video{width: 80%; border-radius: 1.5rem; float: left; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center;position: relative;
 		box-shadow:
   		0 3.2px 2.2px -10px rgba(0, 0, 0, 0.042),
   		0 7.8px 5.2px -10px rgba(0, 0, 0, 0.061),
@@ -559,6 +565,7 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
   		0 48.9px 32.6px -10px rgba(0, 0, 0, 0.108),
   		0 117px 78px -10px rgba(0, 0, 0, 0.15)
 		;
+	@media only screen and ( max-width: 767px) { width: 90%; }
 		h2{ width: 100%; height: 200px; line-height: 200px; position: absolute; left: 0; top: 50%; margin-top: -100px; text-align: center; color: #fff; font-size: 4vw; font-weight: 800;}
 		video{width: 100%; min-width: 100%; min-height: 100%; float: left}}}
 
@@ -738,7 +745,7 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 @media only screen and (max-width: 1199px), only screen and (max-device-width: 1199px) {
 	body{padding: 0;}
 	.left-side{display: none;}
-	.navbar{padding: 30px;}
+	.navbar{padding: 30px 0;}
 	.slider{ width:100%; margin-right: 0;}
 	.slider .swiper-container .slide-inner{padding: 0 60px;}
 	.works .titles{padding-right: 0;}
@@ -780,7 +787,7 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 /* RESPONSIVE MOBILE FIXES */
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
 	.preloader .inner .percentage{font-size: 30vh;}
-	.navbar{padding: 30px 15px;}
+	.navbar{padding: 30px 0;}
 	.navbar .phone{display: none;}
 	.slider .swiper-container .slide-inner{padding: 0 30px;}
 	.slider .swiper-container .slide-inner h2 { font-size: 35px;}

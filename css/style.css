@@ -1415,6 +1415,22 @@ button[type="submit"]:hover i {
   transition: background-image .4s ease-in-out;
 }
 
+@media only screen and (max-width: 767px) {
+  .header {
+    padding: 0 15px;
+  }
+}
+
+.header .container-fluid {
+  width: 80%;
+}
+
+@media only screen and (max-width: 767px) {
+  .header .container-fluid {
+    width: 100%;
+  }
+}
+
 .header .navbar {
   width: 100%;
   margin-bottom: 0;
@@ -1439,8 +1455,8 @@ button[type="submit"]:hover i {
 
 .header .headlines {
   width: 100%;
-  margin-bottom: 100px;
-  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-top: 100px;
   height: 50vh;
 }
 
@@ -1461,13 +1477,23 @@ button[type="submit"]:hover i {
 
 @media only screen and (max-width: 767px) {
   .header .headlines h1 {
-    font-size: 3.125em;
+    font-size: 2.5em;
   }
 }
 
 .header .headlines h4 {
   color: rgba(255, 255, 255, 0.75);
   line-height: 1.5;
+}
+
+.header .headlines .container-fluid {
+  width: 80%;
+}
+
+@media only screen and (max-width: 767px) {
+  .header .headlines .container-fluid {
+    width: 100%;
+  }
 }
 
 .plant {
@@ -2534,12 +2560,18 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: -5rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .showreel {
+    margin-top: 0;
+  }
 }
 
 .showreel .video {
   width: 80%;
   border-radius: 1.5rem;
-  margin-bottom: 6vh;
   float: left;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2556,6 +2588,12 @@ img {
   position: relative;
   -webkit-box-shadow: 0 3.2px 2.2px -10px rgba(0, 0, 0, 0.042), 0 7.8px 5.2px -10px rgba(0, 0, 0, 0.061), 0 14.7px 9.8px -10px rgba(0, 0, 0, 0.075), 0 26.1px 17.4px -10px rgba(0, 0, 0, 0.089), 0 48.9px 32.6px -10px rgba(0, 0, 0, 0.108), 0 117px 78px -10px rgba(0, 0, 0, 0.15);
           box-shadow: 0 3.2px 2.2px -10px rgba(0, 0, 0, 0.042), 0 7.8px 5.2px -10px rgba(0, 0, 0, 0.061), 0 14.7px 9.8px -10px rgba(0, 0, 0, 0.075), 0 26.1px 17.4px -10px rgba(0, 0, 0, 0.089), 0 48.9px 32.6px -10px rgba(0, 0, 0, 0.108), 0 117px 78px -10px rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (max-width: 767px) {
+  .showreel .video {
+    width: 90%;
+  }
 }
 
 .showreel .video h2 {
@@ -3509,7 +3547,7 @@ img {
     display: none;
   }
   .navbar {
-    padding: 30px;
+    padding: 30px 0;
   }
   .slider {
     width: 100%;
@@ -3620,7 +3658,7 @@ img {
     font-size: 30vh;
   }
   .navbar {
-    padding: 30px 15px;
+    padding: 30px 0;
   }
   .navbar .phone {
     display: none;

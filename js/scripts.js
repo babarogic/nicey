@@ -200,12 +200,21 @@
 			}
 		});
 
+		// // // AnimeJS
+		// anime({
+		// 	targets: '.lines path',
+		// 	easing: 'easeInOutExpo',
+		// 	strokeDashoffset: [0, anime.setDashoffset],
+		// 	delay: anime.stagger(100),
+		// 	opacity: [1, 0],
+		// 	duration: 5000,
+		// 	direction: 'reverse'
+		// });
+
+
 
 
 		// TweenMax ////////////
-
-		gsap.from("#Line_2", {duration: 1, stagger: 0.1, drawSVG: 0});
-
 		// HAMBURGER
 		$(function () {
 			var $burger = $('.burger');
