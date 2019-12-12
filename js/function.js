@@ -19,6 +19,23 @@ document.addEventListener('DOMContentLoaded', ( ) => {
         delay: 1,
         duration: 2000,
       });
+      anime({
+        targets: '.icons',
+        translateY: 15,
+        direction: 'alternate',
+        loop: true,
+        easing: 'easeInOutSine',
+        duration: 1500,
+         delay: anime.stagger(100, {start: 0})
+      });
+      anime({
+      targets: '.elements',
+        translateY: 10,
+        direction: 'alternate',
+        loop: true,
+        easing: 'easeInOutSine',
+        duration: 1000,
+      });
       this.destroy();
     },
     offset: '100%'
