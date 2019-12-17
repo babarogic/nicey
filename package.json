@@ -1,0 +1,25 @@
+{
+  "name": "nicey",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/babarogic/nicey.git"
+  },
+  "keywords": [
+    "digital",
+    "product",
+    "design",
+    "agency"
+  ],
+  "author": "Goran Babarogic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/babarogic/nicey/issues"
+  },
+  "homepage": "https://github.com/babarogic/nicey#readme"
+}

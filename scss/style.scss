@@ -1,74 +1,4 @@
-@font-face {
-  font-family: "Gilroy-Black";
-  src: url("Radomir Tinkov - Gilroy-Black.eot");
-  src: url("Radomir Tinkov - Gilroy-Black.eot?#iefix") format("embedded-opentype"), url("Radomir Tinkov - Gilroy-Black.woff2") format("woff2"), url("Radomir Tinkov - Gilroy-Black.woff") format("woff"), url("Radomir Tinkov - Gilroy-Black.ttf") format("ttf"), url("Radomir Tinkov - Gilroy-Black.svg#Gilroy-Black") format("svg");
-  font-style: normal;
-  font-weight: 900;
-}
-
-@font-face {
-  font-family: "Gilroy-Bold";
-  src: url("Radomir Tinkov - Gilroy-Bold.eot");
-  src: url("Radomir Tinkov - Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("Radomir Tinkov - Gilroy-Bold.woff2") format("woff2"), url("Radomir Tinkov - Gilroy-Bold.woff") format("woff"), url("Radomir Tinkov - Gilroy-Bold.ttf") format("ttf"), url("Radomir Tinkov - Gilroy-Bold.svg#Gilroy-Bold") format("svg");
-  font-style: normal;
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Gilroy-ExtraBold";
-  src: url("Radomir Tinkov - Gilroy-ExtraBold.eot");
-  src: url("Radomir Tinkov - Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"), url("Radomir Tinkov - Gilroy-ExtraBold.woff2") format("woff2"), url("Radomir Tinkov - Gilroy-ExtraBold.woff") format("woff"), url("Radomir Tinkov - Gilroy-ExtraBold.ttf") format("ttf"), url("Radomir Tinkov - Gilroy-ExtraBold.svg#Gilroy-ExtraBold") format("svg");
-  font-style: normal;
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: "Gilroy-Heavy";
-  src: url("Radomir Tinkov - Gilroy-Heavy.eot");
-  src: url("Radomir Tinkov - Gilroy-Heavy.eot?#iefix") format("embedded-opentype"), url("Radomir Tinkov - Gilroy-Heavy.woff2") format("woff2"), url("Radomir Tinkov - Gilroy-Heavy.woff") format("woff"), url("Radomir Tinkov - Gilroy-Heavy.ttf") format("ttf"), url("Radomir Tinkov - Gilroy-Heavy.svg#Gilroy-Heavy") format("svg");
-  font-style: normal;
-  font-weight: heavy;
-}
-
-@font-face {
-  font-family: "Gilroy-Light";
-  src: url("Radomir Tinkov - Gilroy-Light.eot");
-  src: url("Radomir Tinkov - Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("Radomir Tinkov - Gilroy-Light.woff2") format("woff2"), url("Radomir Tinkov - Gilroy-Light.woff") format("woff"), url("Radomir Tinkov - Gilroy-Light.ttf") format("ttf"), url("Radomir Tinkov - Gilroy-Light.svg#Gilroy-Light") format("svg");
-  font-style: normal;
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Gilroy-Medium";
-  src: url("Radomir Tinkov - Gilroy-Medium.eot");
-  src: url("Radomir Tinkov - Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("Radomir Tinkov - Gilroy-Medium.woff2") format("woff2"), url("Radomir Tinkov - Gilroy-Medium.woff") format("woff"), url("Radomir Tinkov - Gilroy-Medium.ttf") format("ttf"), url("Radomir Tinkov - Gilroy-Medium.svg#Gilroy-Medium") format("svg");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "Gilroy-Regular";
-  src: url("Radomir Tinkov - Gilroy-Regular.eot");
-  src: url("Radomir Tinkov - Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("Radomir Tinkov - Gilroy-Regular.woff2") format("woff2"), url("Radomir Tinkov - Gilroy-Regular.woff") format("woff"), url("Radomir Tinkov - Gilroy-Regular.ttf") format("ttf"), url("Radomir Tinkov - Gilroy-Regular.svg#Gilroy-Regular") format("svg");
-  font-style: normal;
-  font-weight: regular;
-}
-
-@font-face {
-  font-family: "Gilroy-SemiBold";
-  src: url("Radomir Tinkov - Gilroy-SemiBold.eot");
-  src: url("Radomir Tinkov - Gilroy-SemiBold.eot?#iefix") format("embedded-opentype"), url("Radomir Tinkov - Gilroy-SemiBold.woff2") format("woff2"), url("Radomir Tinkov - Gilroy-SemiBold.woff") format("woff"), url("Radomir Tinkov - Gilroy-SemiBold.ttf") format("ttf"), url("Radomir Tinkov - Gilroy-SemiBold.svg#Gilroy-SemiBold") format("svg");
-  font-style: normal;
-  font-weight: 700;
-}
-
-
-@import "../fonts/fonts";
-
-// // @import url('https://fonts.googleapis.com/css?family=Crimson+Pro:300,700&display=swap&subset=latin-ext');
-// h1, h2{
-// 	font-family: 'Crimson Pro', serif !important;
-// }
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900&display=swap');
 
 @mixin font-render{-webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;	-moz-osx-font-smoothing: grayscale;}
 @mixin transition-cubic{-webkit-transition: all 0.3s ease;	-moz-transition: all 0.3s ease;	transition: all 0.3s ease;
@@ -81,6 +11,8 @@
 $color-dark: #1d1d1d;
 $color-blue: #4d69da;
 $color-green: #61c2a5;
+$color-contact: #189390;
+
 $color-purple: #9743e0;
 $color-red: #f58a9a;
 $color-orange: #e9785e;
@@ -91,9 +23,9 @@ span.green {
 	z-index: 1; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7931ff), color-stop(100%, #ff5833)); background-image: -webkit-linear-gradient(right, #7931ff,#ff5833);
   	-webkit-background-clip: text; -webkit-text-fill-color: transparent; color: #fff; position: relative;
 	&::after { background: none; content: attr(data-text); left: 0; position: absolute;
-		text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
+		text-shadow: 0px 4px 3px rgba(0,0,0,0.3),
+             		 0px 8px 13px rgba(0,0,0,0.1),
+             		 0px 18px 23px rgba(0,0,0,0.1);
 		top: 0; z-index: -1;
 	}
 }
@@ -104,7 +36,7 @@ html {scroll-behavior: smooth;}
 
 /* BODY */
 *{outline: none !important;}
-body{margin: 0; font-family: 'Gilroy'; font-weight: normal; font-style: normal; font-size: 17px; color:$color-dark;  @include transition-bg; @include font-render;}
+body{margin: 0; font-family: 'Lato'; font-weight: normal; font-style: normal; font-size: 17px; color:$color-dark;  @include transition-bg; @include font-render;}
 
 
 /* LINKS */
@@ -141,7 +73,9 @@ button[type="submit"]{ height: 58px; display: -ms-flexbox; display: flex; -ms-fl
 .color-green { background-color: $color-green;}
 .color-orange { background-color: $color-orange;}
 .color-about-dark { background-color: $color-about-dark; }
+
 .color-red { background-color: $color-red; }
+.color-contact { background-color: $color-contact;}
 .color-purple { background-color: $color-purple;
 	.header { background-image: url(../images/bg/header-purple.jpg); background-repeat: no-repeat; background-size: cover; background-position: bottom; -webkit-transition: background-image .4s ease-in-out; transition: background-image .4s ease-in-out; }
 	.left-side ul{ width: 100vh; line-height: 1; display: block; margin: 0; margin-top:50vh; margin-left: -9px; padding: 0; transform: rotate(-90deg); transform-origin: 0 0; position: absolute; left: 50%; top: 50%; text-align: center;
@@ -318,10 +252,10 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 /* CUSTOM BUTTON #2 */
 .custom-outline-btn{ display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-align: center; align-items: center; -ms-flex-pack: justify; justify-content: space-between; text-align: center;
 	*{@include transition;}
-	a{display: flex; flex-wrap: wrap; justify-content: center; height: 58px; border: 1px solid $color-dark; font-size: 13px; font-weight: 600; text-transform: uppercase; padding: 0 30px; padding-top: 18px; background: transparent; border: 1px solid $color-dark; color: #fff; margin-top: 1rem;
-		&:hover{text-decoration: none; border: 1px solid $color-white;}}
-		span{width: 20px; height: 1px; background: $color-dark; display: inline-block; margin-left: 20px; margin-top: 8px; }
-		i{width: 0; height: 0; display: inline-block; margin-left: 0; margin-right: auto; border-style: solid; border-width: 4px 0 4px 4px; border-color: transparent transparent transparent $color-dark; opacity: 1; margin-top: 5px;}
+	a{display: flex; flex-wrap: wrap; justify-content: center; height: 58px; font-size: 13px; font-weight: 600; text-transform: uppercase; padding: 0 30px; padding-top: 18px; background: transparent; border: 1px solid $color-white; color: $color-white !important; margin-top: 1rem;
+		&:hover{text-decoration: none; border: 1px solid $color-white; background: white;}}
+		span{width: 20px; height: 1px; background: $color-white; display: inline-block; margin-left: 20px; margin-top: 8px; }
+		i{width: 0; height: 0; display: inline-block; margin-left: 0; margin-right: auto; border-style: solid; border-width: 4px 0 4px 4px; border-color: transparent transparent transparent $color-white; opacity: 1; margin-top: 5px;}
 	&:hover span{width:50px; margin-left: 20px;}
 &:hover i{ opacity: 0;}}
 
@@ -331,15 +265,16 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 /* HEADER */
 .header{width: 100%; display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center; padding: 0 50px; background-image: url(../images/bg/header.jpg); background-repeat: no-repeat; background-size: cover; background-position: bottom;-webkit-transition: background-image .4s ease-in-out; transition: background-image .4s ease-in-out;
 	@media only screen and ( max-width: 767px) { padding: 0 15px; }
-	.container-fluid { width: 80%;
+	.container-fluid { width: 90%;
 		@media only screen and ( max-width: 767px) { width: 100%; }}
 	.navbar{width: 100%; margin-bottom: 0;}
 	.page-title{ width: 100%; margin-bottom: 100px; margin-top: 100px;
 		h2{font-weight: 700; font-size: 6vw; margin-bottom: 20px;}
 		h4{ padding-right: 40%; line-height: 1.7;}}
 	.headlines{ width: 100%; margin-bottom: 50px; margin-top: 100px; height: 50vh;
+		@media only screen and ( min-width: 768px) and ( max-width: 1366px) { margin-top: 50px }
 		@media only screen and (max-width: 767px) { height: 20vh;}
-		h1{font-size: 52px; font-weight: 700; line-height: 1.1; margin: 0; padding-bottom:5px; color: $color-white;
+		h1{font-size: 52px; font-weight: 900; line-height: 1.2; margin: 0; padding-bottom:5px; color: $color-white;
 			@media only screen and (max-width: 767px) { font-size: 2.5em; }}
 		h4{color: rgba(255, 255, 255, 0.75); line-height: 1.5;}
 		.container-fluid { width: 80%;
@@ -362,15 +297,15 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 			&:hover:before{background: #fff;}}}
 	.logo{margin-left: 0;
 		a{ margin: 0;
-			img{height: 56px;}}}
+			img{height: 70px;}}}
 	.phone{margin-left: 50px;}
 	.main-menu{margin-left: auto;
 		ul{ margin: 0; padding: 0;
 			li{display: inline-block; margin: 0 18px; padding: 0;
-				a{color: #eee !important; display: block; font-size: 15px; font-weight: 600; position: relative; padding: 0 2px;
+				a{color: #eee !important; display: block; font-size: 16px; font-weight: 600; position: relative; padding: 0 2px;
 				&:hover{ text-decoration: none;}
-			&:before { content: ''; display: block; position: absolute; left: 0; bottom: 9px; height: 1px; width: 0; transition: width 0s ease, background .25s ease;}
-			&:after { content: ''; display: block; position: absolute; right: 0; bottom: 9px; height: 1px; width: 0; background: $color-dark; transition: width .25s ease;}
+			&:before { content: ''; display: block; position: absolute; left: 0; bottom: 0; height: 1px; width: 0; transition: width 0s ease, background .25s ease;}
+			&:after { content: ''; display: block; position: absolute; right: 0; bottom: 0; height: 1px; width: 0; background: $color-dark; transition: width .25s ease;}
 			&:hover:before { width: 100%; background: $color-dark; transition: width .25s ease;}
 			&:hover:after { width: 100%; background: transparent; transition: all 0s ease;}}
 			}}}
@@ -555,6 +490,7 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 
 /* SHOWREEL */
 .showreel{width: 100%; display: flex; flex-wrap: wrap; height: 100vh; align-items: center; margin-top: -5rem;
+	@media only screen and ( min-width: 768px) and ( max-width: 1366px) { margin-top: 2rem; }
 	@media only screen and ( max-width: 767px) { margin-top: 0; }
 	.video{width: 80%; border-radius: 1.5rem; float: left; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center;position: relative;
 		box-shadow:
