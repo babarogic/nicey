@@ -20,12 +20,12 @@ $color-white: #faf8f5;
 $color-about-dark: #070b0d;
 
 span.green {
-	z-index: 1; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7931ff), color-stop(100%, #ff5833)); background-image: -webkit-linear-gradient(right, #7931ff,#ff5833);
+	z-index: 1; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffb731), color-stop(100%, #ff5b36)); background-image: -webkit-linear-gradient(right, #ffb731,#ff5b36);
   	-webkit-background-clip: text; -webkit-text-fill-color: transparent; color: #fff; position: relative;
 	&::after { background: none; content: attr(data-text); left: 0; position: absolute;
-		text-shadow: 0px 4px 3px rgba(0,0,0,0.3),
-             		 0px 8px 13px rgba(0,0,0,0.1),
-             		 0px 18px 23px rgba(0,0,0,0.1);
+		text-shadow: 0px 3px 3px rgba(0,0,0,0.3),
+             		 0px 6px 13px rgba(0,0,0,0.1),
+             		 0px 15px 23px rgba(0,0,0,0.1);
 		top: 0; z-index: -1;
 	}
 }
@@ -104,7 +104,7 @@ button[type="submit"]{ height: 58px; display: -ms-flexbox; display: flex; -ms-fl
 
 .color-dark { background-color: $color-dark;
 	h5 { color: $color-white;}
-	h3 a { color: $color-white;}
+	h3 { color: $color-white;}
 	h2 { color: $color-white;}
 	p { color: $color-white;}
 	a { color: $color-blue;}
@@ -264,7 +264,7 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 
 /* HEADER */
 .header{width: 100%; display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center; padding: 0 50px; background-image: url(../images/bg/header.jpg); background-repeat: no-repeat; background-size: cover; background-position: bottom;-webkit-transition: background-image .4s ease-in-out; transition: background-image .4s ease-in-out;
-	@media only screen and ( max-width: 767px) { padding: 0 15px; }
+	@media only screen and ( max-width: 767px) { padding: 0 15px; background-size: 200%; background-position: top; }
 	.container-fluid { width: 90%;
 		@media only screen and ( max-width: 767px) { width: 100%; }}
 	.navbar{width: 100%; margin-bottom: 0;}
@@ -273,7 +273,7 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 		h4{ padding-right: 40%; line-height: 1.7;}}
 	.headlines{ width: 100%; margin-bottom: 50px; margin-top: 100px; height: 50vh;
 		@media only screen and ( min-width: 768px) and ( max-width: 1366px) { margin-top: 50px }
-		@media only screen and (max-width: 767px) { height: 20vh;}
+		@media only screen and (max-width: 767px) { height: auto; margin-bottom: 0; }
 		h1{font-size: 52px; font-weight: 900; line-height: 1.2; margin: 0; padding-bottom:5px; color: $color-white;
 			@media only screen and (max-width: 767px) { font-size: 2.5em; }}
 		h4{color: rgba(255, 255, 255, 0.75); line-height: 1.5;}
@@ -291,7 +291,7 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 .navbar{width: 100%; display: flex; flex-wrap: wrap; padding:30px 0; position: relative; z-index: 9; @include transition;
 	&.hide{ transform: translateY(-100px); @include transition;}
 	&.light{color: #fff;
-		.logo a img{-webkit-filter: brightness(0) invert(1); filter: brightness(0) invert(1);}
+		// .logo a img{-webkit-filter: brightness(0) invert(1); filter: brightness(0) invert(1);}
 		.main-menu ul li a{color:#fff;
 			&:after{background: #fff;}
 			&:hover:before{background: #fff;}}}
@@ -432,6 +432,7 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 /* FEATURED SERVICES */
 .featured-services{width: 100%; display: flex; flex-wrap: wrap; padding: 150px 0; color: #fff;
 	.col-lg-3:nth-child(2n+2){margin-top: 134px;}
+	@media only screen and (max-width: 767px) { padding: 0 0 100px 0 }
 	figure{width: 100%; display: flex; flex-wrap: wrap; flex-direction: column; background-color: rgb(57, 82, 184); position: relative; margin: 15px 0; box-shadow: 0px 0px 0px rgba(0,0,0,0); -webkit-transition: background-color 2s ease-out; -moz-transition: background-color 2s ease-out; -o-transition: background-color 2s ease-out; transition: background-color 2s ease-out;
 		&:hover{ background-color: rgb(57, 82, 184);
 			box-shadow:

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,900&display=swap");
 span.green {
   z-index: 1;
-  background-image: -webkit-linear-gradient(right, #7931ff, #ff5833);
+  background-image: -webkit-linear-gradient(right, #ffb731, #ff5b36);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #fff;
@@ -13,7 +13,7 @@ span.green::after {
   content: attr(data-text);
   left: 0;
   position: absolute;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3), 0px 6px 13px rgba(0, 0, 0, 0.1), 0px 15px 23px rgba(0, 0, 0, 0.1);
   top: 0;
   z-index: -1;
 }
@@ -386,7 +386,7 @@ button[type="submit"]:hover i {
   color: #faf8f5;
 }
 
-.color-dark h3 a {
+.color-dark h3 {
   color: #faf8f5;
 }
 
@@ -1295,6 +1295,8 @@ button[type="submit"]:hover i {
 @media only screen and (max-width: 767px) {
   .header {
     padding: 0 15px;
+    background-size: 200%;
+    background-position: top;
   }
 }
 
@@ -1345,7 +1347,8 @@ button[type="submit"]:hover i {
 
 @media only screen and (max-width: 767px) {
   .header .headlines {
-    height: 20vh;
+    height: auto;
+    margin-bottom: 0;
   }
 }
 
@@ -1430,11 +1433,6 @@ button[type="submit"]:hover i {
 
 .navbar.light {
   color: #fff;
-}
-
-.navbar.light .logo a img {
-  -webkit-filter: brightness(0) invert(1);
-  filter: brightness(0) invert(1);
 }
 
 .navbar.light .main-menu ul li a {
@@ -2160,6 +2158,12 @@ img {
 
 .featured-services .col-lg-3:nth-child(2n+2) {
   margin-top: 134px;
+}
+
+@media only screen and (max-width: 767px) {
+  .featured-services {
+    padding: 0 0 100px 0;
+  }
 }
 
 .featured-services figure {

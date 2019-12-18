@@ -24,7 +24,7 @@
 							return _success();
 						}
 					}
-				}, 1);
+				}, 20);
 		}
 
 
@@ -452,7 +452,7 @@
 // TYPED JS Heading
 var typed = new Typed('.element', {
   // Waits 1000ms after typing "First"
-	strings: ["WE ARE NICEY. ^1000", "WE LOVE ALL COLORS. ^1000", "LET'S BUILD TOGETHER ^1000"],
+	strings: ["WE ARE NICEY. ^1000", "LET'S BUILD TOGETHER ^1000", "YOUR NEXT PRODUCT. ^1000", ],
 	stringsElement: null,
 		// typing speed
 		typeSpeed: 20,
