@@ -91,64 +91,64 @@
 
 
 
-		// SWIPER SLIDER
-		var mySwiper = new Swiper('.swiper-container', {
-			slidesPerView: 'auto',
-			spaceBetween: 0,
-			loop: true,
-			autoplay: {
-				delay: 6000,
-				disableOnInteraction: false,
-			},
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
-				renderBullet: function (index, className) {
-					return '<span class="' + className + '"><svg><circle r="18" cx="20" cy="20"></circle></svg></span>';
-				},
-			},
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
-			},
-		});
+		// // SWIPER SLIDER
+		// var mySwiper = new Swiper('.swiper-container', {
+		// 	slidesPerView: 'auto',
+		// 	spaceBetween: 0,
+		// 	loop: true,
+		// 	autoplay: {
+		// 		delay: 6000,
+		// 		disableOnInteraction: false,
+		// 	},
+		// 	pagination: {
+		// 		el: '.swiper-pagination',
+		// 		clickable: true,
+		// 		renderBullet: function (index, className) {
+		// 			return '<span class="' + className + '"><svg><circle r="18" cx="20" cy="20"></circle></svg></span>';
+		// 		},
+		// 	},
+		// 	navigation: {
+		// 		nextEl: '.swiper-button-next',
+		// 		prevEl: '.swiper-button-prev',
+		// 	},
+		// });
 
 
 
 
 
-		// PAGE TRANSITION
-		$('body a').on('click', function (e) {
+		// // PAGE TRANSITION
+		// $('body a').on('click', function (e) {
 
-			if (typeof $(this).data('fancybox') == 'undefined') {
-				e.preventDefault();
-				var url = this.getAttribute("href");
-				if (url.indexOf('#') != -1) {
-					var hash = url.substring(url.indexOf('#'));
+		// 	if (typeof $(this).data('fancybox') == 'undefined') {
+		// 		e.preventDefault();
+		// 		var url = this.getAttribute("href");
+		// 		if (url.indexOf('#') != -1) {
+		// 			var hash = url.substring(url.indexOf('#'));
 
-					if ($('body ' + hash).length != 0) {
-						$('.transition-overlay').removeClass("active");
-						$(".hamburger").toggleClass("open");
-						$("body").toggleClass("overflow");
-						$(".navigation-menu").removeClass("active");
-						$(".navigation-menu .inner ul").css("transition-delay", "0s");
-						$(".navigation-menu .inner blockquote").css("transition-delay", "0s");
-						$(".navigation-menu .bg-layers span").css("transition-delay", "0.3s");
+		// 			if ($('body ' + hash).length != 0) {
+		// 				$('.transition-overlay').removeClass("active");
+		// 				$(".hamburger").toggleClass("open");
+		// 				$("body").toggleClass("overflow");
+		// 				$(".navigation-menu").removeClass("active");
+		// 				$(".navigation-menu .inner ul").css("transition-delay", "0s");
+		// 				$(".navigation-menu .inner blockquote").css("transition-delay", "0s");
+		// 				$(".navigation-menu .bg-layers span").css("transition-delay", "0.3s");
 
-						$('html, body').animate({
-							scrollTop: $(hash).offset().top
-						}, 1000);
+		// 				$('html, body').animate({
+		// 					scrollTop: $(hash).offset().top
+		// 				}, 1000);
 
-					}
-				} else {
-					$('.transition-overlay').toggleClass("active");
-					setTimeout(function () {
-						window.location = url;
-					}, 600);
+		// 			}
+		// 		} else {
+		// 			$('.transition-overlay').toggleClass("active");
+		// 			setTimeout(function () {
+		// 				window.location = url;
+		// 			}, 600);
 
-				}
-			}
-		});
+		// 		}
+		// 	}
+		// });
 
 
 
@@ -452,7 +452,7 @@
 // TYPED JS Heading
 var typed = new Typed('.element', {
   // Waits 1000ms after typing "First"
-	strings: ["WE ARE NICEY. ^1000", "LET'S BUILD TOGETHER ^1000", "YOUR NEXT PRODUCT. ^1000", ],
+	strings: ["We are Nicey. ^1000", "Let's build together ^1000", "Your next product. ^1000", ],
 	stringsElement: null,
 		// typing speed
 		typeSpeed: 20,
