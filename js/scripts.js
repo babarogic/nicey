@@ -91,27 +91,27 @@
 
 
 
-		// // SWIPER SLIDER
-		// var mySwiper = new Swiper('.swiper-container', {
-		// 	slidesPerView: 'auto',
-		// 	spaceBetween: 0,
-		// 	loop: true,
-		// 	autoplay: {
-		// 		delay: 6000,
-		// 		disableOnInteraction: false,
-		// 	},
-		// 	pagination: {
-		// 		el: '.swiper-pagination',
-		// 		clickable: true,
-		// 		renderBullet: function (index, className) {
-		// 			return '<span class="' + className + '"><svg><circle r="18" cx="20" cy="20"></circle></svg></span>';
-		// 		},
-		// 	},
-		// 	navigation: {
-		// 		nextEl: '.swiper-button-next',
-		// 		prevEl: '.swiper-button-prev',
-		// 	},
-		// });
+		// SWIPER SLIDER
+		var mySwiper = new Swiper('.swiper-container', {
+			slidesPerView: 'auto',
+			spaceBetween: 0,
+			loop: true,
+			autoplay: {
+				delay: 6000,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+				renderBullet: function (index, className) {
+					return '<span class="' + className + '"><svg><circle r="18" cx="20" cy="20"></circle></svg></span>';
+				},
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
 
 
 
@@ -403,7 +403,7 @@
 			$body = $('body'),
 			$panel = $('section, footer, header');
 
-		var scroll = $window.scrollTop() + ($window.height() / 3);
+		var scroll = $window.scrollTop() + ($window.height() / 2);
 
 		$panel.each(function () {
 			var $this = $(this);
