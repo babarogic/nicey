@@ -24,7 +24,7 @@
 							return _success();
 						}
 					}
-				}, 20);
+				}, 1);
 		}
 
 
@@ -117,38 +117,38 @@
 
 
 
-		// PAGE TRANSITION
-		$('body a').on('click', function (e) {
+		// // PAGE TRANSITION
+		// $('body a').on('click', function (e) {
 
-			if (typeof $(this).data('fancybox') == 'undefined') {
-				e.preventDefault();
-				var url = this.getAttribute("href");
-				if (url.indexOf('#') != -1) {
-					var hash = url.substring(url.indexOf('#'));
+		// 	if (typeof $(this).data('fancybox') == 'undefined') {
+		// 		e.preventDefault();
+		// 		var url = this.getAttribute("href");
+		// 		if (url.indexOf('#') != -1) {
+		// 			var hash = url.substring(url.indexOf('#'));
 
-					if ($('body ' + hash).length != 0) {
-						$('.transition-overlay').removeClass("active");
-						$(".hamburger").toggleClass("open");
-						$("body").toggleClass("overflow");
-						$(".navigation-menu").removeClass("active");
-						$(".navigation-menu .inner ul").css("transition-delay", "0s");
-						$(".navigation-menu .inner blockquote").css("transition-delay", "0s");
-						$(".navigation-menu .bg-layers span").css("transition-delay", "0.3s");
+		// 			if ($('body ' + hash).length != 0) {
+		// 				$('.transition-overlay').removeClass("active");
+		// 				$(".hamburger").toggleClass("open");
+		// 				$("body").toggleClass("overflow");
+		// 				$(".navigation-menu").removeClass("active");
+		// 				$(".navigation-menu .inner ul").css("transition-delay", "0s");
+		// 				$(".navigation-menu .inner blockquote").css("transition-delay", "0s");
+		// 				$(".navigation-menu .bg-layers span").css("transition-delay", "0.3s");
 
-						$('html, body').animate({
-							scrollTop: $(hash).offset().top
-						}, 1000);
+		// 				$('html, body').animate({
+		// 					scrollTop: $(hash).offset().top
+		// 				}, 1000);
 
-					}
-				} else {
-					$('.transition-overlay').toggleClass("active");
-					setTimeout(function () {
-						window.location = url;
-					}, 600);
+		// 			}
+		// 		} else {
+		// 			$('.transition-overlay').toggleClass("active");
+		// 			setTimeout(function () {
+		// 				window.location = url;
+		// 			}, 600);
 
-				}
-			}
-		});
+		// 		}
+		// 	}
+		// });
 
 
 
@@ -199,6 +199,18 @@
 				$(this).css("background-image", "url(" + $(this).data("background") + ")");
 			}
 		});
+
+		// // // AnimeJS
+		// anime({
+		// 	targets: '.lines path',
+		// 	easing: 'easeInOutExpo',
+		// 	strokeDashoffset: [0, anime.setDashoffset],
+		// 	delay: anime.stagger(100),
+		// 	opacity: [1, 0],
+		// 	duration: 5000,
+		// 	direction: 'reverse'
+		// });
+
 
 
 
@@ -391,7 +403,7 @@
 			$body = $('body'),
 			$panel = $('section, footer, header');
 
-		var scroll = $window.scrollTop() + ($window.height() / 3);
+		var scroll = $window.scrollTop() + ($window.height() / 2);
 
 		$panel.each(function () {
 			var $this = $(this);
@@ -440,10 +452,10 @@
 // TYPED JS Heading
 var typed = new Typed('.element', {
   // Waits 1000ms after typing "First"
-	strings: ['We are nicey, ^1000 <br>a digital product<br>design agency'],
+	strings: ["We are Nicey. ^1000", "Let's build together ^1000", "Your next product. ^1000", ],
 	stringsElement: null,
 		// typing speed
-		typeSpeed: 42,
+		typeSpeed: 20,
 		// time before typing starts
 		startDelay: 3400,
 		// backspacing speed
@@ -458,4 +470,7 @@ var typed = new Typed('.element', {
 		attr: null,
 		// either html or text
 		contentType: 'html',
+		fadeOut: true,
+		fadeIn: true,
+		loop: true
 });

@@ -1,46 +1,5 @@
-/* CUSTOM FONTS 
-@font-face {
-	font-family: 'Mont';
-	src: url('../fonts/Mont-Regular.eot');
-	src: local('☺'),
-		url('../fonts/Mont-Regular.woff') format('woff'),
-		url('../fonts/Mont-Regular.ttf') format('truetype'),
-		url('../fonts/Mont-Regular.svg') format('svg');
-	font-weight: 400;
-	font-style: normal;
-}
 
-
-@font-face {
-	font-family: 'Mont';
-	src: url('../fonts/Mont-Bold.eot');
-	src: local('☺'),
-		url('../fonts/Mont-Bold.woff') format('woff'),
-		url('../fonts/Mont-Bold.ttf') format('truetype'),
-		url('../fonts/Mont-Bold.svg') format('svg');
-	font-weight: 600;
-	font-style: normal;
-}
-
-
-@font-face {
-	font-family: 'Mont';
-	src: url('../fonts/Mont-Heavy.eot');
-	src: local('☺'),
-		url('../fonts/Mont-Heavy.woff') format('woff'),
-		url('../fonts/Mont-Heavy.ttf') format('truetype'),
-		url('../fonts/Mont-Heavy.svg') format('svg');
-	font-weight: 800;
-	font-style: normal;
-}
-
-*/
-
-@import "../fonts/fonts";
-
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900&display=swap');
 
 @mixin font-render{-webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;	-moz-osx-font-smoothing: grayscale;}
 @mixin transition-cubic{-webkit-transition: all 0.3s ease;	-moz-transition: all 0.3s ease;	transition: all 0.3s ease;
@@ -50,18 +9,36 @@
 @mixin transition{-webkit-transition: all .25s ease-in-out;-moz-transition: all .25s ease-in-out; -ms-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out;}
 
 
-$color-dark: #161E30;
-$color-blue: #2749D8;
-$color-green: #4bcc8c;
-$color-purple: #7E0CE2;
-$color-red: #F36B7F;
+$color-dark: #2a292c;
+$color-blue: #4d69da;
+$color-blue-two: #8080ff;
+$color-green: #61c2a5;
+$color-contact: #189390;
+
+$color-purple: #9743e0;
+$color-red: #f58a9a;
+$color-orange: #e9785e;
 $color-white: #faf8f5;
 $color-about-dark: #070b0d;
+
+span.green {
+	z-index: 1; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffb731), color-stop(100%, #ff5b36)); background-image: -webkit-linear-gradient(right, #ffb731,#ff5b36);
+  	-webkit-background-clip: text; -webkit-text-fill-color: transparent; color: #fff; position: relative;
+	&::after { background: none; content: attr(data-text); left: 0; position: absolute;
+		text-shadow: 0px 3px 3px rgba(0,0,0,0.3),
+             		 0px 6px 13px rgba(0,0,0,0.1),
+             		 0px 15px 23px rgba(0,0,0,0.1);
+		z-index: -1;
+	}
+}
+
+
+html {scroll-behavior: smooth;}
 
 
 /* BODY */
 *{outline: none !important;}
-body{margin: 0; padding-left: 50px; padding-right: 50px; font-family: 'Lato'; font-size: 17px; color:$color-dark;  @include transition-bg; @include font-render;}
+body{margin: 0; font-family: 'Lato', sans-serif; font-weight: 400; font-style: normal; font-size: 17px; color:$color-dark;  @include transition-bg; @include font-render;}
 
 
 /* LINKS */
@@ -87,16 +64,26 @@ button[type="submit"]{ height: 58px; display: -ms-flexbox; display: flex; -ms-fl
 &:hover i{ opacity: 0;}}
 
 
+/* TYPOGRAPHY */
+h1, h2, h3, h4, h5 { font-family: 'Lato', sans-serif; @include font-render }
+
+
 
 /* CUSTOM CONTAINER */
 @media (min-width: 1240px){ .container { max-width: 1200px;}}
 
 
+
 /* CUSTOM ELEMENTS */
 .color-white { background-color: $color-white;}
+.color-green { background-color: $color-green;}
+.color-orange { background-color: $color-orange;}
 .color-about-dark { background-color: $color-about-dark; }
+
 .color-red { background-color: $color-red; }
+.color-contact { background-color: $color-contact;}
 .color-purple { background-color: $color-purple;
+	.header { background-image: url(../images/bg/header-purple.jpg); background-repeat: no-repeat; background-size: cover; background-position: bottom; -webkit-transition: background-image .4s ease-in-out; transition: background-image .4s ease-in-out; }
 	.left-side ul{ width: 100vh; line-height: 1; display: block; margin: 0; margin-top:50vh; margin-left: -9px; padding: 0; transform: rotate(-90deg); transform-origin: 0 0; position: absolute; left: 50%; top: 50%; text-align: center;
 		li{display: inline-block; margin: 0 10px; padding: 0; list-style: none;
 			a{display: block; font-size: 13px; font-weight: 600; position: relative; padding: 0 2px; color: #fff;
@@ -120,10 +107,22 @@ button[type="submit"]{ height: 58px; display: -ms-flexbox; display: flex; -ms-fl
 	.left-side .logo img{-webkit-filter: invert(0%); filter: invert(0%); z-index: 1;}
 	.left-side .gotop img{-webkit-filter: invert(100%); filter: invert(100%);}}
 
+	.color-blue-two { background-color: $color-blue-two;
+		.left-side ul{ width: 100vh; line-height: 1; display: block; margin: 0; margin-top:50vh; margin-left: -9px; padding: 0; transform: rotate(-90deg); transform-origin: 0 0; position: absolute; left: 50%; top: 50%; text-align: center;
+			li{display: inline-block; margin: 0 10px; padding: 0; list-style: none;
+				a{display: block; font-size: 13px; font-weight: 600; position: relative; padding: 0 2px; color: #fff;
+					&:hover{ text-decoration: none;}
+				&:before { content: ''; display: block; position: absolute; left: 0; bottom: 6px; height: 1px; width: 0; transition: width 0s ease, background .25s ease;}
+				&:after { content: ''; display: block; position: absolute; right: 0; bottom: 6px; height: 1px; width: 0; background: #fff; transition: width .25s ease;}
+				&:hover:before { width: 100%; background: #fff; transition: width .25s ease;}
+				&:hover:after { width: 100%; background: transparent; transition: all 0s ease;}}}}
+		.left-side .logo img{-webkit-filter: invert(0%); filter: invert(0%); z-index: 1;}
+		.left-side .gotop img{-webkit-filter: invert(100%); filter: invert(100%);}}
+
 
 .color-dark { background-color: $color-dark;
 	h5 { color: $color-white;}
-	h3 a { color: $color-white;}
+	h3 { color: $color-white;}
 	h2 { color: $color-white;}
 	p { color: $color-white;}
 	a { color: $color-blue;}
@@ -183,7 +182,7 @@ button[type="submit"]{ height: 58px; display: -ms-flexbox; display: flex; -ms-fl
 	.inner { width: 100vw; height: 100vh; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; overflow: hidden;
 	.logo{display: inline-block; margin: 0; animation: fadeInUp ease 0.6s;
 		img{height: 50px;}}
-	.percentage{ width: 100%; font-size: 36vh; line-height: 1; font-weight: 800; color: #fff; position: absolute; top: 50%; transform: translateY(-50%); text-align: center; opacity: 0.05; transition-delay: 0.10s;}}}
+	.percentage{ width: 100%; font-size: 36vh; line-height: 1; font-family: 'Kanit', sans-serif; font-weight: 900; color: #fff; position: absolute; top: 50%; transform: translateY(-50%); text-align: center; opacity: 0.05; transition-delay: 0.10s;}}}
 
 
 .page-loaded.preloader{ left: calc(-100% - 200px); visibility: hidden;}
@@ -196,8 +195,8 @@ button[type="submit"]{ height: 58px; display: -ms-flexbox; display: flex; -ms-fl
 /* BURGER */
 .burger { margin-top: 1px; z-index: 3; display: inline-block; width: 50px; height: 50px; padding: 0; border: none; outline: none; cursor: pointer;}
 .isNavOpen { overflow: hidden;}
-.burger-svg__base{fill: #fff;}
-.burger-svg__bars{fill: $color-dark;}
+.burger-svg__base{fill: transparent;}
+.burger-svg__bars{fill: $color-white;}
 
 
 
@@ -222,7 +221,7 @@ button[type="submit"]{ height: 58px; display: -ms-flexbox; display: flex; -ms-fl
 			a{display: block; color: #fff; text-decoration: underline;}}}}
 
 
-
+// Povecati tajm prikaza i ease in out
 /* REVEAL EFFECT */
 .reveal-effect { float: left; overflow: hidden; position: relative;}
 .reveal-effect>* { -webkit-animation-duration: 1s;  animation-duration: 1s;  -webkit-animation-fill-mode: forwards;  animation-fill-mode: forwards;  -webkit-animation-timing-function: cubic-bezier(.785,.135,.15,.86);  animation-timing-function: cubic-bezier(.785,.135,.15,.86); position: relative;}
@@ -258,7 +257,7 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 &:hover i{ opacity: 0;}}
 
 
-/* CUSTOM BUTTON */
+/* CUSTOM BUTTON #1 */
 .custom-btn{ display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-align: center; align-items: center; -ms-flex-pack: justify; justify-content: space-between; text-align: center;
 	*{@include transition;}
 	a{display: flex; flex-wrap: wrap; justify-content: center; height: 58px; border: 1px solid $color-dark; font-size: 13px; font-weight: 600; text-transform: uppercase; padding: 0 30px; padding-top: 18px; background: $color-blue; color: #fff;
@@ -268,20 +267,60 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 	&:hover span{width:50px; margin-left: 20px;}
 &:hover i{ opacity: 0;}}
 
+/* CUSTOM BUTTON #2 */
+.custom-outline-btn{ display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-align: center; align-items: center; -ms-flex-pack: justify; justify-content: space-between; text-align: center;
+	*{@include transition;}
+	a{display: flex; flex-wrap: wrap; justify-content: center; height: 58px; font-size: 13px; font-weight: 600; text-transform: uppercase; padding: 0 30px; padding-top: 18px; background: $color-white; border: 1px solid $color-white; color: $color-dark !important; margin-top: 1rem; border-radius: 8px; text-decoration: none !important;
+		&:hover{text-decoration: none; border: 1px solid $color-dark; background: transparent; color: $color-dark !important;}}
+		span{width: 20px; height: 1px; background: $color-dark; display: inline-block; margin-left: 20px; margin-top: 8px; }
+		i{width: 0; height: 0; display: inline-block; margin-left: 0; margin-right: auto; border-style: solid; border-width: 4px 0 4px 4px; border-color: transparent transparent transparent $color-dark; opacity: 1; margin-top: 5px;}
+	&:hover span{width:50px; margin-left: 20px;}
+&:hover i{ opacity: 1;}}
 
-/* HEADER */
-.header{width: 100%; display: flex; flex-wrap: wrap; flex-direction: column;
+// This goes in header for background
+// background-image: url(../images/header.jpg); background-size: cover;
+
+/* HEADER Home */
+.header{width: 100%; display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center; padding: 0 50px; background-image: url(../images/bg/header.jpg); background-repeat: no-repeat; background-size: cover; background-position: bottom;-webkit-transition: background-image .4s ease-in-out; transition: background-image .4s ease-in-out;
+	@media only screen and ( max-width: 767px) { padding: 0 15px; background-size: 200%; background-position: top; }
+	// .container-fluid { width: 90%;
+	// 	@media only screen and ( max-width: 767px) { width: 100%; }}
 	.navbar{width: 100%; margin-bottom: 0;}
-	.page-title{ width: 100%; margin-bottom: 100px; margin-top: 50px;
+	.page-title{ width: 100%; margin-bottom: 100px; margin-top: 100px;
 		h2{font-weight: 700; font-size: 6vw; margin-bottom: 20px;}
 		h4{ padding-right: 40%; line-height: 1.7;}}
-	.headlines{ width: 100%; margin-bottom: 100px; margin-top: 50px; height: 40vh;
-		@media only screen and (max-width: 767px) { height: 20vh;}
-		h1{font-size: 5vw; font-weight: 900; line-height: 1; margin: 0; padding-bottom:5px; color: $color-dark;
-			@media only screen and (max-width: 767px) { font-size: 3.125em; }}}}
+	.headlines{ width: 100%; margin-bottom: 50px; margin-top: 100px; height: 50vh;
+		@media only screen and ( min-width: 768px) and ( max-width: 1366px) { margin-top: 50px }
+		@media only screen and (max-width: 767px) { height: auto; margin-bottom: 0; }
+		h1{font-size: 3.25rem; font-weight: 900; line-height: 1.23; letter-spacing: .6px; margin: 0; padding-bottom:5px; color: $color-white;
+			@media only screen and (max-width: 767px) { font-size: 2.5em; }}
+		h4{color: rgba(255, 255, 255, 0.75); line-height: 1.5; font-weight: 300;}
+		p{color: rgba(255, 255, 255, 0.75); line-height: 1.5; font-weight: 300; font-size: 1.5rem;}
+		.container-fluid { width: 80%;
+			@media only screen and ( max-width: 767px) { width: 100%; }}
+		}}
 
-.plant { background: url(../images/bg/plant-01.png); background-repeat: no-repeat; background-position: 100% 36%;
-	z-index: -1; width: 100%; height: 100%; position: absolute; left: 0; top: 0; box-sizing: border-box; background-size: 620px auto;
+.header-white{width: 100%; display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center; padding: 0 50px;
+	.navbar .main-menu ul li a { color: $color-dark !important; }
+	@media only screen and ( max-width: 767px) { padding: 0 15px; background-size: 200%; background-position: top; }
+	.container-fluid { width: 90%;
+		@media only screen and ( max-width: 767px) { width: 100%; }}
+	.navbar{width: 100%; margin-bottom: 0;}
+	.page-title{ width: 100%; margin-bottom: 100px; margin-top: 100px;
+		h2{font-weight: 700; font-size: 5vw; margin-bottom: 20px;}
+		h4{ padding-right: 40%; line-height: 1.7;}}
+	.headlines{ width: 100%; margin-bottom: 50px; margin-top: 100px; height: 50vh;
+		@media only screen and ( min-width: 768px) and ( max-width: 1366px) { margin-top: 50px }
+		@media only screen and (max-width: 767px) { height: auto; margin-bottom: 0; }
+		h1{font-size: 52px; font-weight: 500; line-height: 1.1; margin: 0; padding-bottom:5px; color: $color-white;
+			@media only screen and (max-width: 767px) { font-size: 2.5em; }}
+		h4{color: rgba(255, 255, 255, 0.75); line-height: 1.5; font-weight: 300;}
+		p{color: rgba(255, 255, 255, 0.75); line-height: 1.5; font-weight: 300; font-size: 1.5rem;}
+		.container-fluid { width: 80%;
+			@media only screen and ( max-width: 767px) { width: 100%; }}}}
+
+.plant { background: url(../images/bg/plant-01.png); background-repeat: no-repeat; background-position: 90% 15%;
+	z-index: -1; width: 100%; height: 100%; position: absolute; left: 0; box-sizing: border-box; background-size: 620px auto;
 	@media only screen and (max-width: 1199px) { background-position: 60vw 15vh; background-size: 50%; }
 	@media only screen and (max-width: 767px) { background: none !important; }
 }
@@ -290,22 +329,22 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 .navbar{width: 100%; display: flex; flex-wrap: wrap; padding:30px 0; position: relative; z-index: 9; @include transition;
 	&.hide{ transform: translateY(-100px); @include transition;}
 	&.light{color: #fff;
-		.logo a img{-webkit-filter: brightness(0) invert(1); filter: brightness(0) invert(1);}
+		// .logo a img{-webkit-filter: brightness(0) invert(1); filter: brightness(0) invert(1);}
 		.main-menu ul li a{color:#fff;
 			&:after{background: #fff;}
 			&:hover:before{background: #fff;}}}
 	.logo{margin-left: 0;
 		a{ margin: 0;
-			img{height: 42px;}}}
+			img{height: 52px;}}}
 	.phone{margin-left: 50px;}
 	.main-menu{margin-left: auto;
 		ul{ margin: 0; padding: 0;
 			li{display: inline-block; margin: 0 18px; padding: 0;
-				a{display: block; font-size: 15px; font-weight: 600; position: relative; padding: 0 2px;
+				a{color: #eee !important; display: block; font-size: 18px; font-weight: 400; position: relative; padding: 0 2px;
 				&:hover{ text-decoration: none;}
-			&:before { content: ''; display: block; position: absolute; left: 0; bottom: 9px; height: 1px; width: 0; transition: width 0s ease, background .25s ease;}
-			&:after { content: ''; display: block; position: absolute; right: 0; bottom: 9px; height: 1px; width: 0; background: $color-dark; transition: width .25s ease;}
-			&:hover:before { width: 100%; background: $color-dark; transition: width .25s ease;}
+			&:before { content: ''; display: block; position: absolute; left: 0; bottom: 0; height: 1px; width: 0; transition: width 0s ease, background .25s ease;}
+			&:after { content: ''; display: block; position: absolute; right: 0; bottom: 0; height: 1px; width: 0; background: $color-purple; transition: width .25s ease;}
+			&:hover:before { width: 100%; background: $color-white; transition: width .25s ease;}
 			&:hover:after { width: 100%; background: transparent; transition: all 0s ease;}}
 			}}}
 	.hamburger-menu{ margin-right: 0; margin-left: 30px;}}
@@ -330,7 +369,7 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 
 
 /* SLIDER */
-.slider{width: calc(100% + 50px); height: 560px; display: flex; flex-wrap: wrap; background: $color-dark; margin-right: -50px; overflow: hidden; position: relative;
+.slider{width: 100%; height: 560px; display: flex; flex-wrap: wrap; background: $color-dark; overflow: hidden; position: relative;
 	&:hover .swiper-container .swiper-slide {margin-left: -10px;}
 	&:hover .swiper-button-next span{width: 100%;}
 	.swiper-container { width: 100%; height: 100%; position: relative;
@@ -343,8 +382,8 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 		h2{ font-size: 52px; font-weight: 600; color: #fff; margin-left: -3px;}
 		.link{display: block; margin-top: 50px;
 			a{display: inline-block; font-weight: 600; color: #fff; font-size: 13px; position: relative;
-				&:before{content: ""; width: 100%; height: 6px; background: #fff; position: absolute; left: 0; bottom: 0; opacity: 0.3;}
-				&:after{content: ""; width: 0; height: 6px; background: #fff; position: absolute; right: 0; bottom: 0; @include transition;}
+				&:before{content: ""; width: 100%; height: 3px; background: #fff; position: absolute; left: 0; bottom: 0; opacity: 0.3;}
+				&:after{content: ""; width: 0; height: 3px; background: #fff; position: absolute; right: 0; bottom: 0; @include transition;}
 				&:hover{text-decoration: none;}
 				&:hover:after{width: 100%;}}}}}}
 
@@ -385,7 +424,7 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 
 
 /* MAIN SERVICES */
-.main-services{width: 100%; display: flex; flex-wrap: wrap; padding: 150px 0; text-align: center;
+.main-services{width: 100%; display: flex; flex-wrap: wrap; padding: 30vh 0; text-align: center;
 	.titles{padding: 0 20%; color: #fff;}
 	figure{ display: inline-block; margin-bottom: 0;
 		img{height: 60px; display: inline-block;}}
@@ -396,9 +435,10 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 
 
 /* WORKS */
-.works{width: 100%; display: flex; flex-wrap: wrap; padding: 0;
+.works{width: 100%; display: flex; flex-wrap: wrap; padding: 0 0 30vh 0;
 	.titles{display: block; padding-right: 15%; margin-bottom: 20px;
-		h2{ font-size: 18px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;}
+		h2{ font-weight: 700; letter-spacing: 2px;}
+		h3{ font-size: 3rem;}
 		p{font-size: 20px; line-height: 1.5; margin-bottom: 40px; font-weight: 300;}}
 	ul{ margin-bottom: 0; margin-left: -30px; margin-right: -30px; padding: 0;
 		li{width: 50%; margin: 40px 0; padding: 0 30px; list-style: none;}}}
@@ -411,7 +451,7 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 		a{display: block;}a
 		img{width: 100%;}}
 	.project-content{width: 100%; display: block;
-		h3{font-size: 27px; display: block;
+		h3{font-size: 27px; display: block; font-weight: 700;
 			a{display: block;
 				&:hover{text-decoration: none;}}}
 		small{display: block;}}}
@@ -429,10 +469,21 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 
 
 /* FEATURED SERVICES */
-.featured-services{width: 100%; display: flex; flex-wrap: wrap; padding: 150px 0; color: #fff;
+.featured-services{width: 100%; display: flex; flex-wrap: wrap; padding: 30vh 0; color: #fff;
+	p { line-height: 1.75; color: rgb(190, 205, 255);}
 	.col-lg-3:nth-child(2n+2){margin-top: 134px;}
-	figure{width: 100%; display: flex; flex-wrap: wrap; flex-direction: column; position: relative; margin: 15px 0; box-shadow: 0px 0px 0px rgba(0,0,0,0); transition: .5s all;
-		&:hover{ background: #fff; box-shadow: 0px 56px 52px -6px rgba(0,0,0,0.2); transition: .5s all;
+	@media only screen and (max-width: 767px) { padding: 0 0 100px 0 }
+	figure{width: 100%; display: flex; flex-wrap: wrap; flex-direction: column; background-color: rgb(57, 82, 184); position: relative; margin: 15px 0; box-shadow: 0px 0px 0px rgba(0,0,0,0); -webkit-transition: background-color 2s ease-out; -moz-transition: background-color 2s ease-out; -o-transition: background-color 2s ease-out; transition: background-color 2s ease-out;
+		&:hover{ background-color: rgb(57, 82, 184);
+			box-shadow:
+			  0 3.4px 3.2px -36px rgba(0, 0, 0, 0.077),
+			  0 8.1px 7.8px -36px rgba(0, 0, 0, 0.109),
+			  0 15.3px 14.7px -36px rgba(0, 0, 0, 0.131),
+			  0 27.3px 26.1px -36px rgba(0, 0, 0, 0.151),
+			  0 51px 48.9px -36px rgba(0, 0, 0, 0.176),
+			  0 122px 117px -36px rgba(0, 0, 0, 0.24);
+			z-index: 1040;
+			transition: .5s all;
 			img{opacity: 1; margin: 0; filter: invert(0%);} // Ovde ide invert service slike
 			figcaption{color:white;}}
 		img{opacity: 0; padding: 0; filter: blur(30px);} // padding 35% da se vrati na staro
@@ -451,9 +502,9 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 	.col-12{padding-left: 25px; padding-right: 25px;}
 	.inner h3{font-size: 20px;}
 	.content-box{display: flex; flex-wrap: wrap; flex-direction: column; margin-bottom: 80px; padding-bottom: 40px; border-bottom: 1px solid rgba(40,40,40,0.1); @include transition; position: relative;
-		&:before { content: ''; display: block; position: absolute; left: 0; bottom: -1px; height: 1px; width: 0; transition: width 0s ease, background .25s ease;}
-			&:after { content: ''; display: block; position: absolute; right: 0; bottom: -1px; height: 1px; width: 0; background: $color-dark; transition: width .25s ease;}
-			&:hover:before { width: 100%; background: $color-dark; transition: width .25s ease;}
+		&:before { content: ''; display: block; position: absolute; left: 0; bottom: -1px; height: 2px; width: 0; transition: width 0s ease, background .25s ease;}
+			&:after { content: ''; display: block; position: absolute; right: 0; bottom: -1px; height: 2px; width: 0; background: $color-purple; transition: width .25s ease;}
+			&:hover:before { width: 100%; background: $color-purple; transition: width .25s ease;}
 			&:hover:after { width: 100%; background: transparent; transition: all 0s ease;}
 		&.selected {padding-bottom: 80px;}
 		&.selected h3{font-size: 4vw; font-weight: 600;}
@@ -479,9 +530,20 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 
 
 /* SHOWREEL */
-.showreel{width: 100%; display: flex; flex-wrap: wrap; padding: 150px 0;
-	.video{width: 100%; float: left; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center;position: relative; box-shadow: 0px 32px 64px -6px rgba(0,0,0,0.2);
-		h2{ width: 100%; height: 200px; line-height: 200px; position: absolute; left: 0; top: 50%; margin-top: -100px; text-align: center; color: #fff; font-size: 4vw; font-weight: 800;}
+.showreel{width: 100%; display: flex; flex-wrap: wrap; height: 100vh; align-items: center; margin-top: -5rem;
+	@media only screen and ( min-width: 768px) and ( max-width: 1366px) { margin-top: 2rem; }
+	@media only screen and ( max-width: 767px) { margin-top: 0; }
+	.video{width: 80%; border-radius: 32px; float: left; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center;position: relative;
+		box-shadow:
+  		0 3.2px 2.2px -10px rgba(0, 0, 0, 0.042),
+  		0 7.8px 5.2px -10px rgba(0, 0, 0, 0.061),
+  		0 14.7px 9.8px -10px rgba(0, 0, 0, 0.075),
+  		0 26.1px 17.4px -10px rgba(0, 0, 0, 0.089),
+  		0 48.9px 32.6px -10px rgba(0, 0, 0, 0.108),
+  		0 117px 78px -10px rgba(0, 0, 0, 0.15)
+		;
+	@media only screen and ( max-width: 767px) { width: 90%; }
+		h2{ width: 100%; height: 200px; line-height: 200px; position: absolute; left: 0; top: 50%; margin-top: -100px; text-align: center; color: #fff; font-size: 4vw; font-weight: 900; text-transform: uppercase;}
 		video{width: 100%; min-width: 100%; min-height: 100%; float: left}}}
 
 
@@ -597,9 +659,9 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 
 
 /* WORK WITH US */
-.work-with-us{width: 100%; display: flex; flex-wrap: wrap; padding: 150px 0; color: #fff;
+.work-with-us{width: 100%; display: flex; flex-wrap: wrap; padding: 0 0 30vh 0; color: #fff;
 	h6{ font-size: 17px; font-weight: 600; margin-bottom: 20px;}
-	h2{font-size: 6vw; font-weight: 800; margin-bottom: 50px; }
+	h2{font-size: 3.25rem; font-weight: 800; margin-bottom: 50px; }
 	p{display: block; margin: 0; font-size: 19px;}
 	a{color: #fff; text-decoration: underline;}
 	small{display: block; margin: 15px 0;}}
@@ -608,21 +670,22 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 
 
 /* CONTACT */
-.contact{width: 100%; display: flex; flex-wrap: wrap; padding-top: 150px;
-	h5{font-weight: 600; margin-bottom: 20px; display: block;}
-	address{display: block; margin-bottom: 50px;
-		p{margin: 0;}
+.contact{width: 100%; display: flex; flex-wrap: wrap; padding: 15vh 0 30vh 0;
+	.container-fluid { width: 70%; }
+	h5{font-weight: 600; margin-bottom: 20px; display: block; color: white;}
+	address{display: block; margin-bottom: 50px; color: white;
+		p{margin: 0; color: white;}
 		a{text-decoration: underline;}}
 	.contact-form{display: block; margin-top: 50px;
-		h5{margin-bottom: 40px;}
+		h5{margin-bottom: 40px; color: white}
 	#contact{display: block;
 		.form-group{display: block; position: relative; margin-bottom: 35px;
-			span{ width: 100%; line-height: 54px; position: absolute; left: 0; top: 0; padding: 0 20px; z-index:0; @include transition;
-				&.label-up{ font-size: 13px; line-height: 16px; top: -20px; font-weight: 600;}}
-			input[type="text"]{background: none; position: relative; z-index: 2;}
+			span{ width: 100%; line-height: 54px; position: absolute; left: 0; top: 0; padding: 0 20px; z-index:0; @include transition; color: white;
+				&.label-up{ font-size: 13px; line-height: 16px; top: -20px; font-weight: 600; color: white;}}
+			input[type="text"]{background: none; position: relative; z-index: 2; color: white;}
 			input:focus + span{ font-size: 13px; line-height: 16px; top: -20px; font-weight: 600;}
-			textarea{background: none; position: relative; z-index: 2;}
-			textarea:focus + span{ font-size: 13px; line-height: 16px; top: -20px; font-weight: 600;}
+			textarea{background: none; position: relative; z-index: 2; color: white;}
+			textarea:focus + span{ font-size: 13px; line-height: 16px; top: -20px; font-weight: 600; color: white;}
 			label.error{color: red; margin-top: 5px; margin-bottom: 0; font-weight: 600; font-size: 13px;}}}
 		#success,  #error {display:none; float:left;}
 		#error {background: red; color: #fff;}
@@ -631,12 +694,12 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 
 
 /* FOOTER */
-.footer{width: 100%; display: flex; flex-wrap: wrap; padding: 150px 0;
+.footer{width: 100%; display: flex; flex-wrap: wrap; padding: 10vh 0;
 	.career{display: block; width: 75%; border-bottom: 1px solid rgba(40,40,40,0.1); padding-bottom: 100px; margin-bottom: 100px;
 	h6{ font-size: 17px; font-weight: 600; margin-bottom: 20px;}
 	h2{font-size: 3vw; font-weight: 800; margin-bottom: 50px; }}
 	.logo{display: block; margin: 0;
-		img{height: 42px;}}
+		img{height: auto;}}
 	h5{font-size: 15px; font-weight: 600; margin-bottom: 20px;}
 	.sub-footer{ width: 100%; display: flex; flex-wrap: wrap; margin-top: 100px; font-size: 13px;
 		ul{display: inline-block;  margin-left: 0; margin-right: auto; margin-bottom: 0; padding: 0;
@@ -660,7 +723,7 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 @media only screen and (max-width: 1199px), only screen and (max-device-width: 1199px) {
 	body{padding: 0;}
 	.left-side{display: none;}
-	.navbar{padding: 30px;}
+	.navbar{padding: 30px 0;}
 	.slider{ width:100%; margin-right: 0;}
 	.slider .swiper-container .slide-inner{padding: 0 60px;}
 	.works .titles{padding-right: 0;}
@@ -702,7 +765,7 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 /* RESPONSIVE MOBILE FIXES */
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
 	.preloader .inner .percentage{font-size: 30vh;}
-	.navbar{padding: 30px 15px;}
+	.navbar{padding: 30px 0;}
 	.navbar .phone{display: none;}
 	.slider .swiper-container .slide-inner{padding: 0 30px;}
 	.slider .swiper-container .slide-inner h2 { font-size: 35px;}
