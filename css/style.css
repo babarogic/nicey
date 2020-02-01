@@ -32,7 +32,7 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 17px;
-  color: #2a292c;
+  color: #353538;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
   -webkit-font-smoothing: antialiased;
@@ -42,14 +42,14 @@ body {
 
 /* LINKS */
 a {
-  color: #2a292c;
+  color: #353538;
   -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #2a292c;
+  color: #353538;
 }
 
 a:active {
@@ -114,12 +114,12 @@ button[type="submit"] strong {
   -ms-flex-line-pack: center;
       align-content: center;
   height: 58px;
-  border: 1px solid #2a292c;
+  border: 1px solid #353538;
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
   padding: 0 30px;
-  background: #2a292c;
+  background: #353538;
   color: #fff;
 }
 
@@ -478,7 +478,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .color-dark {
-  background-color: #2a292c;
+  background-color: #353538;
 }
 
 .color-dark h5 {
@@ -518,12 +518,12 @@ h1, h2, h3, h4, h5 {
 }
 
 .color-dark button[type="submit"] strong {
-  color: #2a292c;
+  color: #353538;
   background-color: #faf8f5;
 }
 
 .color-dark button[type="submit"] strong b {
-  background: #2a292c !important;
+  background: #353538 !important;
 }
 
 .color-dark button[type="submit"] strong i {
@@ -662,13 +662,13 @@ h1, h2, h3, h4, h5 {
 }
 
 .pagination li.page-item.active a.page-link {
-  border: 1px solid #2a292c;
+  border: 1px solid #353538;
   background: none;
 }
 
 .pagination li.page-item a.page-link {
   border: none;
-  color: #2a292c;
+  color: #353538;
   font-size: 13px;
   font-weight: 600;
   border-radius: 50%;
@@ -1183,7 +1183,7 @@ h1, h2, h3, h4, h5 {
 .custom-link span {
   width: 20px;
   height: 1px;
-  background: #2a292c;
+  background: #353538;
   display: inline-block;
   margin: 0;
 }
@@ -1196,7 +1196,7 @@ h1, h2, h3, h4, h5 {
   margin-right: auto;
   border-style: solid;
   border-width: 4px 0 4px 4px;
-  border-color: transparent transparent transparent #2a292c;
+  border-color: transparent transparent transparent #353538;
   opacity: 1;
 }
 
@@ -1244,7 +1244,7 @@ h1, h2, h3, h4, h5 {
       -ms-flex-pack: center;
           justify-content: center;
   height: 58px;
-  border: 1px solid #2a292c;
+  border: 1px solid #353538;
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1327,7 +1327,7 @@ h1, h2, h3, h4, h5 {
   padding-top: 18px;
   background: #faf8f5;
   border: 1px solid #faf8f5;
-  color: #2a292c !important;
+  color: #353538 !important;
   margin-top: 1rem;
   border-radius: 8px;
   text-decoration: none !important;
@@ -1335,15 +1335,15 @@ h1, h2, h3, h4, h5 {
 
 .custom-outline-btn a:hover {
   text-decoration: none;
-  border: 1px solid #2a292c;
+  border: 1px solid #353538;
   background: transparent;
-  color: #2a292c !important;
+  color: #353538 !important;
 }
 
 .custom-outline-btn span {
   width: 20px;
   height: 1px;
-  background: #2a292c;
+  background: #353538;
   display: inline-block;
   margin-left: 20px;
   margin-top: 8px;
@@ -1357,7 +1357,7 @@ h1, h2, h3, h4, h5 {
   margin-right: auto;
   border-style: solid;
   border-width: 4px 0 4px 4px;
-  border-color: transparent transparent transparent #2a292c;
+  border-color: transparent transparent transparent #353538;
   opacity: 1;
   margin-top: 5px;
 }
@@ -1502,7 +1502,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .header-white .navbar .main-menu ul li a {
-  color: #2a292c !important;
+  color: #353538 !important;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1845,14 +1845,14 @@ h1, h2, h3, h4, h5 {
   bottom: 6px;
   height: 1px;
   width: 0;
-  background: #2a292c;
+  background: #353538;
   -webkit-transition: width .25s ease;
   transition: width .25s ease;
 }
 
 .left-side ul li a:hover:before {
   width: 100%;
-  background: #2a292c;
+  background: #353538;
   -webkit-transition: width .25s ease;
   transition: width .25s ease;
 }
@@ -1886,7 +1886,7 @@ h1, h2, h3, h4, h5 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background: #2a292c;
+  background: #353538;
   overflow: hidden;
   position: relative;
 }
@@ -2129,7 +2129,7 @@ h1, h2, h3, h4, h5 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background: #2a292c;
+  background: #353538;
 }
 
 .page-header .video-bg {
@@ -2960,10 +2960,10 @@ img {
   padding: 40px;
   margin-top: 20px;
   margin-bottom: 40px;
-  background: #2a292c;
+  background: #353538;
   position: relative;
   color: #fff;
-  background: url(../images/quote-bg.svg) left top no-repeat #2a292c;
+  background: url(../images/quote-bg.svg) left top no-repeat #353538;
   background-size: contain;
 }
 
@@ -3103,7 +3103,7 @@ img {
   content: "";
   width: 100%;
   height: 3px;
-  background: #2a292c;
+  background: #353538;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -3149,7 +3149,7 @@ img {
   content: "";
   width: 30%;
   height: 3px;
-  background: #2a292c;
+  background: #353538;
   position: absolute;
   left: -25px;
   bottom: 0;
@@ -3167,7 +3167,7 @@ img {
   font-weight: 600;
   font-size: 14px;
   color: #fff;
-  background: #2a292c;
+  background: #353538;
   padding: 0 30px;
 }
 
@@ -3190,7 +3190,7 @@ img {
   height: 5px;
   float: left;
   border-radius: 50%;
-  background: #2a292c;
+  background: #353538;
   margin-right: 15px;
   margin-top: 11px;
 }
@@ -3224,8 +3224,8 @@ img {
 
 .blog .sidebar .widget .tags li a:hover {
   text-decoration: none;
-  border: 1px solid #2a292c;
-  background: #2a292c;
+  border: 1px solid #353538;
+  background: #353538;
   color: #fff;
 }
 
@@ -3404,7 +3404,7 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 15vh 0 30vh 0;
+  padding: 0 0 30vh 0;
 }
 
 .contact .container-fluid {
@@ -3634,14 +3634,14 @@ img {
   bottom: 8px;
   height: 1px;
   width: 0;
-  background: #2a292c;
+  background: #353538;
   -webkit-transition: width .25s ease;
   transition: width .25s ease;
 }
 
 .footer .sub-footer ul li a:hover:before {
   width: 100%;
-  background: #2a292c;
+  background: #353538;
   -webkit-transition: width .25s ease;
   transition: width .25s ease;
 }

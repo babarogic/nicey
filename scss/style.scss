@@ -9,7 +9,7 @@
 @mixin transition{-webkit-transition: all .25s ease-in-out;-moz-transition: all .25s ease-in-out; -ms-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out;}
 
 
-$color-dark: #2a292c;
+$color-dark: #353538;
 $color-blue: #4d69da;
 $color-blue-two: #8080ff;
 $color-green: #61c2a5;
@@ -670,7 +670,7 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 
 
 /* CONTACT */
-.contact{width: 100%; display: flex; flex-wrap: wrap; padding: 15vh 0 30vh 0;
+.contact{width: 100%; display: flex; flex-wrap: wrap; padding: 0 0 30vh 0;
 	.container-fluid { width: 70%; }
 	h5{font-weight: 600; margin-bottom: 20px; display: block; color: white;}
 	address{display: block; margin-bottom: 50px; color: white;
