@@ -1505,6 +1505,16 @@ h1, h2, h3, h4, h5 {
   color: #353538 !important;
 }
 
+.header-white .light .main-menu ul li a {
+  color: white !important;
+  font-weight: 500;
+}
+
+.header-white .light .logo img {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
 @media only screen and (max-width: 767px) {
   .header-white {
     padding: 0 15px;
@@ -1703,7 +1713,7 @@ h1, h2, h3, h4, h5 {
   color: #eee !important;
   display: block;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 700;
   position: relative;
   padding: 0 2px;
 }

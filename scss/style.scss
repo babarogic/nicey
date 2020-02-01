@@ -302,6 +302,8 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 
 .header-white{width: 100%; display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center; padding: 0 50px;
 	.navbar .main-menu ul li a { color: $color-dark !important; }
+	.light .main-menu ul li a { color: white !important; font-weight: 500; }
+	.light .logo img {-webkit-filter: brightness(0) invert(1); filter: brightness(0) invert(1);}
 	@media only screen and ( max-width: 767px) { padding: 0 15px; background-size: 200%; background-position: top; }
 	.container-fluid { width: 90%;
 		@media only screen and ( max-width: 767px) { width: 100%; }}
@@ -340,7 +342,7 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 	.main-menu{margin-left: auto;
 		ul{ margin: 0; padding: 0;
 			li{display: inline-block; margin: 0 18px; padding: 0;
-				a{color: #eee !important; display: block; font-size: 18px; font-weight: 400; position: relative; padding: 0 2px;
+				a{color: #eee !important; display: block; font-size: 18px; font-weight: 700; position: relative; padding: 0 2px;
 				&:hover{ text-decoration: none;}
 			&:before { content: ''; display: block; position: absolute; left: 0; bottom: 0; height: 1px; width: 0; transition: width 0s ease, background .25s ease;}
 			&:after { content: ''; display: block; position: absolute; right: 0; bottom: 0; height: 1px; width: 0; background: $color-purple; transition: width .25s ease;}
