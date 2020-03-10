@@ -9,7 +9,7 @@
 @mixin transition{-webkit-transition: all .25s ease-in-out;-moz-transition: all .25s ease-in-out; -ms-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out;}
 
 
-$color-dark: #2a292c;
+$color-dark: #353538;
 $color-blue: #4d69da;
 $color-blue-two: #8080ff;
 $color-green: #61c2a5;
@@ -302,6 +302,8 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 
 .header-white{width: 100%; display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center; padding: 0 50px;
 	.navbar .main-menu ul li a { color: $color-dark !important; }
+	.light .main-menu ul li a { color: white !important; font-weight: 500; }
+	.light .logo img {-webkit-filter: brightness(0) invert(1); filter: brightness(0) invert(1);}
 	@media only screen and ( max-width: 767px) { padding: 0 15px; background-size: 200%; background-position: top; }
 	.container-fluid { width: 90%;
 		@media only screen and ( max-width: 767px) { width: 100%; }}
@@ -340,7 +342,7 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 	.main-menu{margin-left: auto;
 		ul{ margin: 0; padding: 0;
 			li{display: inline-block; margin: 0 18px; padding: 0;
-				a{color: #eee !important; display: block; font-size: 18px; font-weight: 400; position: relative; padding: 0 2px;
+				a{color: #eee !important; display: block; font-size: 18px; font-weight: 700; position: relative; padding: 0 2px;
 				&:hover{ text-decoration: none;}
 			&:before { content: ''; display: block; position: absolute; left: 0; bottom: 0; height: 1px; width: 0; transition: width 0s ease, background .25s ease;}
 			&:after { content: ''; display: block; position: absolute; right: 0; bottom: 0; height: 1px; width: 0; background: $color-purple; transition: width .25s ease;}
@@ -530,7 +532,7 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 
 
 /* SHOWREEL */
-.showreel{width: 100%; display: flex; flex-wrap: wrap; height: 100vh; align-items: center; margin-top: -5rem;
+.showreel{width: 100%; display: flex; flex-wrap: wrap; height: 100vh; align-items: center; margin-top: -3vh;
 	@media only screen and ( min-width: 768px) and ( max-width: 1366px) { margin-top: 2rem; }
 	@media only screen and ( max-width: 767px) { margin-top: 0; }
 	.video{width: 80%; border-radius: 32px; float: left; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center;position: relative;
@@ -670,7 +672,7 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 
 
 /* CONTACT */
-.contact{width: 100%; display: flex; flex-wrap: wrap; padding: 15vh 0 30vh 0;
+.contact{width: 100%; display: flex; flex-wrap: wrap; padding: 0 0 30vh 0;
 	.container-fluid { width: 70%; }
 	h5{font-weight: 600; margin-bottom: 20px; display: block; color: white;}
 	address{display: block; margin-bottom: 50px; color: white;
