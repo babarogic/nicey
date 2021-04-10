@@ -289,7 +289,7 @@ h6 {font-size: 17px; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px;
 	.page-title{ width: 100%; margin-bottom: 100px; margin-top: 100px;
 		h2{font-weight: 700; font-size: 6vw; margin-bottom: 20px;}
 		h4{ padding-right: 40%; line-height: 1.7;}}
-	.headlines{ width: 100%; margin-bottom: 50px; margin-top: 100px; height: 50vh;
+	.headlines{ width: 100%; margin-bottom: 50px; margin-top: 64px;
 		@media only screen and ( min-width: 768px) and ( max-width: 1366px) { margin-top: 50px }
 		@media only screen and (max-width: 767px) { height: auto; margin-bottom: 0; }
 		h1{font-size: 3.25rem; font-weight: 900; line-height: 1.23; letter-spacing: .6px; margin: 0; padding-bottom:5px; color: $color-white;
