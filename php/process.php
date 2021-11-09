@@ -14,16 +14,16 @@ try {
     //Server settings
     //$mail->SMTPDebug = 2;                                       // Enable verbose debug output
     $mail->isSMTP();                                            // Set mailer to use SMTP
-    $mail->Host       = 'mail.wearenicey.com';  			// Specify main and backup SMTP servers
+    $mail->Host       = 'mail.nicey.rs';  			// Specify main and backup SMTP servers
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'office@wearenicey.com';                     // SMTP username
-    $mail->Password   = 'usrangolub123';                               // SMTP password
+    $mail->Username   = 'office@nicey.rs';                     // SMTP username
+    $mail->Password   = '~(43l^27ebl1';                               // SMTP password
     $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, `ssl` also accepted
     $mail->Port       = 465;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('office@wearenicey.com');
-    $mail->addAddress('office@wearenicey.com');     // Add a recipient
+    $mail->setFrom('office@nicey.rs');
+    $mail->addAddress('office@nicey.rs');     // Add a recipient
     $mail->addReplyTo($_REQUEST['email'], $_REQUEST['name']);
 
     // Content
